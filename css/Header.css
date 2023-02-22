@@ -1,0 +1,187 @@
+
+
+
+  .meniu-container {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(19, 19, 19, 0.858);
+    color: #bebdbd;
+    padding: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0px #14aedc;
+  }
+
+  .meniu a{
+    font-size: 17px;
+  }
+  
+  .meniu-logo {
+    line-height: 0;
+    margin: 0 20px;
+  }
+  
+  .meniu-logo img {
+    max-height: 40px;
+    max-width: 100px;
+    flex-shrink: 0;
+  }
+  
+  .meniu-container a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+  
+  .meniu-container a:hover {
+    color: #f900ff;
+  }
+  
+  .meniu-container input {
+    display: block;
+    width: 35px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+    -webkit-touch-callout: none;
+  }
+  
+ 
+  .meniu-container span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #bebdbd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  .meniu-container span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  .meniu-container span:nth-child(3) {
+    transform-origin: 0% 100%;
+  }
+  
+  .meniu-container input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(3px,-1px);
+    background: #232323;
+  }
+  
+  .meniu-container input:checked ~ span:nth-child(4) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  .meniu-container input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px,11px);
+  }
+  
+  .meniu ul {
+    list-style: none;
+  }
+  
+  .meniu li {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  
+  
+  @media only screen and (max-width: 899px) { 
+    .meniu-container {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    .meniu-logo {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .meniu-logo img {
+      max-height: 30px;
+    }
+  
+    .meniu {
+      position: absolute;
+      box-sizing: border-box;
+      width: 300px;
+      
+      top: 0;
+      margin: -20px;
+      padding: 75px 50px 50px;
+      background: #bebdbd;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translateX(0%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      transition: opacity 0.5s ease-out;
+      opacity: 0;
+      height: auto;
+      overflow: hidden;
+
+    }
+  
+    .meniu-container input:checked ~ .meniu {
+      opacity: 1;
+    height: auto;
+  
+     
+  
+      
+    }
+  }
+  
+  
+  @media only screen and (min-width: 900px) { 
+    .meniu-container {
+      width: 100%;
+    }
+  
+    .meniu-container a {
+      color: #bebdbd;
+    }
+  
+    .meniu-container input {
+      display: none;
+    }
+  
+   
+    .meniu-container span {
+      display: none;
+    }
+  
+    .meniu {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .meniu ul {
+      display: flex;
+      padding: 0;
+    }
+  
+    .meniu li {
+      padding: 0 20px;
+    }
+  }
