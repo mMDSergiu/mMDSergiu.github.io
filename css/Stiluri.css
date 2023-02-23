@@ -30,7 +30,7 @@ body {
   max-width: auto;
   padding: 50px;
   padding-top: 25px;
-  border-radius: 30px;
+  border-radius: 25px;
   background: rgba(19, 19, 19, 0.858);
   margin-bottom: 120px;
   padding-bottom: 75px;
@@ -40,6 +40,7 @@ body {
   -o-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
   filter: brightness(80%);
   transition: 200ms;
+  
 
 }
 
@@ -50,16 +51,30 @@ body {
   -o-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
   filter: brightness(100%);
   transition: 350ms;
+
 }
 
+.Cutia1:hover h1{
+  color: #7bbcfe;
+  text-shadow: 
+  0 0 5px #0077ff,
+  0 0 10px #0077ff, 
+  0 0 28px #005cc6;
+   transition: 1500ms;
+}
+
+
 .Cutia1 h1 {
+  font-family: "Sofia", sans-serif;
   margin: 0 0 10px;
   padding: 0;
   background: local;
   font-size: 44px;
-  color: rgb(20, 174, 220);
   margin-bottom: 7px;
+  color: rgb(21, 177, 255);
 }
+
+
 
 .Cutia1 p {
   margin: 0;
@@ -140,13 +155,13 @@ button:hover::before {
   height: 2450px;
   max-width: auto;
   padding: 1px;
-  border-radius: 60px;
+  border-radius: 25px;
   background: rgba(19, 19, 19, 0.858);
 
-  box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-  -moz-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-  -webkit-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-  -o-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
+  box-shadow: 0 0 20px 3px rgb(20, 174, 220);
+  -moz-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
+  -webkit-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
+  -o-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
 
   filter: brightness(80%);
   transition: 200ms;
@@ -155,11 +170,10 @@ button:hover::before {
 }
 
 .Cutia2:hover {
-  box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-  -moz-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-  -webkit-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-  -o-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-
+  box-shadow: 0 0 25px 5px rgb(20, 174, 220);
+  -moz-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
+  -webkit-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
+  -o-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
 
   filter: brightness(100%);
   transition: 350ms;
@@ -167,10 +181,24 @@ button:hover::before {
 
 
 .Cutia2 h1 {
+  font-family: "Sofia", sans-serif;
   color: #f760b4;
   font-size: 50px;
   margin-top: 30px;
 }
+
+.Cutia2:hover h1{
+  color: #fc8ff4;
+  text-shadow: 
+  0 0 5px #fc5bb3,
+  0 0 10px #fc5bb3, 
+  0 0 38px #fd38a4;
+   transition: 1500ms;
+   font-size: 55px;
+
+}
+
+
 
 .Cutia2 hr {
   border-width: 1px;
@@ -538,24 +566,24 @@ input[type=radio] {
   max-width: auto;
   padding: 10px;
 
-  border-radius: 60px;
+  border-radius: 25px;
   background: rgba(14, 14, 14, 0.858);
   margin-top: 120px;
 
-  box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-  -moz-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-  -webkit-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-  -o-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
+  box-shadow: 0 0 20px 3px rgb(20, 174, 220);
+  -moz-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
+  -webkit-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
+  -o-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
 
   filter: brightness(80%);
   transition: 200ms;
 }
 
 .Cutia3:hover {
-  box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-  -moz-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-  -webkit-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-  -o-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
+  box-shadow: 0 0 25px 5px rgb(20, 174, 220);
+  -moz-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
+  -webkit-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
+  -o-box-shadow: 0 0 25px 5px rgb(20, 174, 220);
 
 
   filter: brightness(100%);
@@ -572,6 +600,7 @@ input[type=radio] {
 }
 
 .Cutia3 h1 {
+  font-family: "Sofia", sans-serif;
   color: #f760b4;
   font-size: 50px;
   margin-top: 30px;
@@ -579,7 +608,16 @@ input[type=radio] {
   margin-right: 10%;
 }
 
+.Cutia3:hover h1{
+  color: #fc8ff4;
+  text-shadow: 
+  0 0 5px #fc5bb3,
+  0 0 10px #fc5bb3, 
+  0 0 38px #fd38a4;
+   transition: 1500ms;
+   font-size: 55px;
 
+}
 
 
 
@@ -976,7 +1014,7 @@ a {
   bottom: 120px;
   right: -20px;
   display: none;
-  width: 80px;
+  width: 100px;
 }
 
 
@@ -990,8 +1028,8 @@ a {
   text-align: center;
   margin-top: 100px;
   padding: 40px 0;
-  font: 300 60px 'Times New Roman', sans-serif;
-  color: #f441a5;
+  font: 300 60px "Sofia", sans-serif;
+  color: #f760b4;;
   letter-spacing: 3px;
 }
 
@@ -1413,8 +1451,8 @@ hr {
 @media only screen and (max-width: 1100px) {
   .mergi {
     align-items: center;
-    margin-right: 17.5%;
-    padding-left: 20px;
+    margin-right: auto;
+    padding-left: auto;
     transition: 300ms;
   }
 }
@@ -1450,8 +1488,8 @@ hr {
 @media only screen and (max-width: 1100px) {
   .mergi11 {
     align-items: center;
-    margin-right: 17.5%;
-    padding-left: 20px;
+    margin-right: auto;
+    padding-left: auto;
     transition: 300ms;
   }
 }
@@ -1488,8 +1526,8 @@ hr {
 @media only screen and (max-width: 1100px) {
   .mergi111 {
     align-items: center;
-    margin-right: 17.5%;
-    padding-left: 20px;
+    margin-right: auto;
+    padding-left: auto;
     transition: 300ms;
   }
 }

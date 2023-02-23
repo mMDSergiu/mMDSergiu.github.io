@@ -1,5 +1,5 @@
 document.getElementById('header').innerHTML = `  
-<input type="checkbox" aria-label="Toggle menu" />
+<input type="checkbox" aria-label="Toggle menu"/>
 <span></span>
 <span></span>
 <span></span>
@@ -41,3 +41,4 @@ document.getElementById('header').innerHTML = `
 
   </ul>
 </div>`;
+

@@ -384,7 +384,7 @@ input:checked + .slide-container .nav label { display: block; }
   margin-top: 150px;
   max-width: auto;
   padding: 50px;
-  padding-top: 25px;
+  padding-top: 10px;
   border-radius: 60px;
   background: rgba(19, 19, 19, 0.858);
   margin-bottom: 120px;
@@ -455,9 +455,20 @@ transition: 100ms;
   
   
   .Cutia h1{
+    font-family: "Sofia", sans-serif;
   color: #f760b4;
 	font-size: 50px;
-	margin-top: 30px;
+  }
+  
+  .Cutia:hover h1{
+    color: #fc8ff4;
+    text-shadow: 
+    0 0 5px #fc5bb3,
+    0 0 10px #fc5bb3, 
+    0 0 38px #fd38a4;
+     transition: 1500ms;
+     font-size: 55px;
+  
   }
   
   .Cutia hr{
