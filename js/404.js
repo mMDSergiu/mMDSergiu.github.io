@@ -17,7 +17,7 @@ $("input[type='checkbox']").change(function() {
       $('.big-text').text('Pagina pe care o căutați nu a fost găsită...').css('color', '#000');
       $('.big-text').addClass('animated fadeIn');
       $('.big-text').removeClass('flash');
-      $('.small-text').html("Ai dori sa te întorci la <a href='../NeonLux.html'>PAGINA PRINCIPALĂ</a> în loc?").css('color', '#000');
+      $('.small-text').html("Ai dori sa te întorci la <a href='../index.html'>PAGINA PRINCIPALĂ</a> în loc?").css('color', '#000');
       $('.small-text').addClass('fadeIn');
       $('.small-text').removeClass('flash');
       $(".lines").css('display', 'block');

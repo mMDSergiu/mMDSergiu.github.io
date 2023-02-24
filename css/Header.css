@@ -1,5 +1,3 @@
-
-
 .meniu-container {
   position: sticky;
   display: flex;
@@ -16,7 +14,7 @@
   box-shadow: 0 0 10px 0px #14aedc;
 }
 
-.meniu a{
+.meniu a {
   font-size: 17px;
 
 }
@@ -50,17 +48,17 @@
   margin: 0;
   position: absolute;
   cursor: pointer;
-  opacity: 0; 
-  z-index: 2; 
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 
 }
 
-.meniu-container input:checked ~ a {
-  pointer-events: auto; 
+.meniu-container input:checked~a {
+  pointer-events: auto;
 }
 
-.meniu-container input:checked ~ .meniu {
+.meniu-container input:checked~.meniu {
   opacity: 1;
   height: auto;
   overflow: hidden;
@@ -76,33 +74,33 @@
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-              
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+
 }
 
 .meniu-container span:first-child {
-  transform-origin: 0% 0%; 
+  transform-origin: 0% 0%;
 }
 
 .meniu-container span:nth-child(3) {
   transform-origin: 0% 100%;
 }
 
-.meniu-container input:checked ~ span {
+.meniu-container input:checked~span {
   opacity: 1;
-  transform: rotate(45deg) translate(3px,-1px);
+  transform: rotate(45deg) translate(3px, -1px);
   background: #232323;
 }
 
-.meniu-container input:checked ~ span:nth-child(4) {
+.meniu-container input:checked~span:nth-child(4) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.meniu-container input:checked ~ span:nth-child(3) {
-  transform: rotate(-45deg) translate(-5px,11px);
+.meniu-container input:checked~span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px, 11px);
 }
 
 .meniu ul {
@@ -114,7 +112,7 @@
   font-size: 20px;
 }
 
-@media  (max-width: 999px) { 
+@media (max-width: 999px) {
   .meniu-container {
     flex-direction: column;
     align-items: flex-end;
@@ -124,76 +122,75 @@
 
   .meniu-logo {
     position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .meniu-logo img {
-      max-height: 50px;
-    }
-  
-    .meniu {
-      position: fixed;
-      box-sizing: border-box;
-      width: 300px;
-      top: 0;
-      margin: -20px;
-      padding: 75px 50px 50px;
-      background: #bebdbd;
-      -webkit-font-smoothing: antialiased;
-      transform-origin: 0% 0%;
-      transform: translateX(0%);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-      transition: opacity 0.5s ease-out;
-      opacity: 0;
-      height: auto;
-      overflow: hidden;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    }
-  
-    .meniu-container input:checked ~ .meniu {
-      opacity: 1;
-      
+  .meniu-logo img {
+    max-height: 50px;
+  }
+
+  .meniu {
+    position: fixed;
+    box-sizing: border-box;
+    width: 300px;
+    top: 0;
+    margin: -20px;
+    padding: 75px 50px 50px;
+    background: #bebdbd;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translateX(0%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
     height: auto;
-    
+    overflow: hidden;
+    display: none;
   }
-  
 
+  .meniu-container input:checked~.meniu {
+    display: ;
+    opacity: 1;
+    height: auto;
   }
-  
-  
-  @media  (min-width: 1000px) { 
-    .meniu-container {
-      width: 100%;
-    }
-  
-    .meniu-container a {
-      color: #bebdbd;
-    }
-  
-    .meniu-container input {
-      display: none;
-    }
-  
-   
-    .meniu-container span {
-      display: none;
-    }
-  
-    .meniu {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .meniu ul {
-      display: flex;
-      padding: 0;
-    }
-  
-    .meniu li {
-      padding: 0 20px;
-    }
+
+
+}
+
+
+@media (min-width: 1000px) {
+  .meniu-container {
+    width: 100%;
   }
+
+  .meniu-container a {
+    color: #bebdbd;
+  }
+
+  .meniu-container input {
+    display: none;
+  }
+
+
+  .meniu-container span {
+    display: none;
+  }
+
+  .meniu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .meniu ul {
+    display: flex;
+    padding: 0;
+  }
+
+  .meniu li {
+    padding: 0 20px;
+  }
+}

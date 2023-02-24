@@ -1,3 +1,12 @@
+const isHome = document.getElementById('header').getAttribute('data-page') === 'home';
+const mainUrl = isHome ? '' : '../Index.html';
+
+const isHome1 = document.getElementById('header').getAttribute('data-page') === 'home';
+const mainUrl1 = isHome ? '' : '.';
+
+const isHome2 = document.getElementById('header').getAttribute('data-page') === 'home';
+const mainUrl2 = isHome ? '' : '.';
+
 document.getElementById('header').innerHTML = `  
 <input type="checkbox" aria-label="Toggle menu"/>
 <span></span>
@@ -14,27 +23,27 @@ document.getElementById('header').innerHTML = `
   <ul>
  
     <li>
-    <a href="#AnchorNoi">Despre Noi</a>
+    <a href="${mainUrl}#AnchorNoi">Despre Noi</a>
     </li>
     <li>
-      <a href="#AnchorGlarie">Galerie</a>
+      <a href="${mainUrl}#AnchorGlarie">Galerie</a>
     </li>
     <li>
-      <a href="#AnchorProduse">Produse</a>
+      <a href="${mainUrl}#AnchorProduse">Produse</a>
     </li>
     <li>
-      <a href="#AnchorContact">Contact</a>
+      <a href="${mainUrl}#AnchorContact">Contact</a>
     </li>
 
   </ul>
   <ul>
     <li>
-      <a href="./pages/Register.html" target="_blank" rel="noopener noreferrer">
+      <a href="${mainUrl1}./pages/Register.html" >
         Creare Cont
       </a>
     </li>
     <li>
-      <a href="./pages/Login.html" target="_blank" rel="noopener noreferrer">
+      <a href="${mainUrl2}./pages/Login.html" >
         Logare
       </a>
     </li>

@@ -11,7 +11,7 @@
     display: grid;
     grid-template-rows: 1fr;
     font-family: "Raleway", sans-serif;
-    background-color: #000000;
+    background-color: #1c181d;
     }
     
     h3 {
@@ -351,7 +351,7 @@ input:checked + .slide-container .nav label { display: block; }
     padding: 50px;
     padding-top: 20px;
     border-radius: 60px;
-    background: rgba(19, 19, 19, 0.858);
+    background: rgb(2, 2, 2);
     margin-bottom: 120px;
     padding-bottom: 75px;
     box-shadow: 0 0 20px 5px rgb(20, 174, 220);
