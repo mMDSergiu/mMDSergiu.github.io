@@ -31,7 +31,7 @@ body {
   padding: 50px;
   padding-top: 25px;
   border-radius: 25px;
-  background: rgb(10, 10, 10);
+  background: rgb(13, 13, 13);
   margin-bottom: 120px;
   padding-bottom: 75px;
   box-shadow: 0 0 20px 3px rgb(20, 174, 220);
@@ -101,7 +101,7 @@ button {
   border-radius: 30px;
   cursor: pointer;
   z-index: 1;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 #start {
@@ -153,11 +153,11 @@ button:hover::before {
 .Cutia2 {
   margin-left: 100px;
   margin-right: 100px;
-  height: 2450px;
+  height: 2506px;
   max-width: auto;
   padding: 1px;
   border-radius: 25px;
-  background: rgb(10, 10, 10);
+  background: rgb(13, 13, 13);
   margin-bottom: 120px;
   padding-bottom: 75px;
   box-shadow: 0 0 20px 3px rgb(20, 174, 220);
@@ -576,7 +576,7 @@ input[type=radio] {
   margin-right: 100px;
   max-width: auto;
   padding: 10px;
-  background: rgb(10, 10, 10);
+  background: rgb(13, 13, 13);
   border-radius: 25px;
 
   margin-top: 120px;
@@ -1360,11 +1360,16 @@ hr {
    button{
     width: 13.5em;
     height: 5.5em;
+    margin-top: -25px;
    }
 
    .Cutia2{
     margin-left: 50px;
     margin-right: 50px;
+   }
+
+   .Cutia2 p{
+ font-size: 20px;
    }
 
    
@@ -1411,12 +1416,14 @@ hr {
   button {
     width: 13.5em;
     height: 5.5em;
+ 
   }
 
   .Cutia2 {
     margin-left: 25px;
     margin-right: 25px;
     border-radius: 50px;
+    
   }
 
   .mergi {
