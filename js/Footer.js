@@ -4,6 +4,7 @@ const mainUrlFooter = isHomeFooter ? '' : '../Index.html';
 
 
 document.getElementById('footer1').innerHTML = `  
+
 <div class="footer-content">
 
             <h3>Neon Lux</h3>
@@ -51,6 +52,7 @@ document.getElementById('footer1').innerHTML = `
             </div>
 
           </div>
+   
 `;
 
 
