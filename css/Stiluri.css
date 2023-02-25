@@ -157,7 +157,7 @@ button:hover::before {
   max-width: auto;
   padding: 1px;
   border-radius: 25px;
-  background: rgb(2, 2, 2);
+  background: rgb(10, 10, 10);
   margin-bottom: 120px;
   padding-bottom: 75px;
   box-shadow: 0 0 20px 3px rgb(20, 174, 220);
@@ -576,7 +576,7 @@ input[type=radio] {
   margin-right: 100px;
   max-width: auto;
   padding: 10px;
-  background: rgb(2, 2, 2);
+  background: rgb(10, 10, 10);
   border-radius: 25px;
 
   margin-top: 120px;
@@ -1283,6 +1283,9 @@ hr {
 
 #AnchorGlarie {
   scroll-margin-top: 50px;
+}
+#AnchorNoi {
+  scroll-margin-top: 100px;
 }
 
 .upper-part {

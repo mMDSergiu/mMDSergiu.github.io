@@ -1,3 +1,8 @@
+const isHomeFooter = document.getElementById('footer1').getAttribute('data-page') === 'home1';
+const mainUrlFooter = isHomeFooter ? '' : '../Index.html';
+
+
+
 document.getElementById('footer1').innerHTML = `  
 <div class="footer-content">
 
@@ -33,13 +38,13 @@ document.getElementById('footer1').innerHTML = `
 
               <ul class="f-menu">
 
-                <li><a href="#AnchorNoi">DespreNoi</a></li>
+                <li><a href="${mainUrl}#AnchorNoi">DespreNoi</a></li>
 
-                <li><a href="#AnchorGlarie">Galerie</a></li>
+                <li><a href="${mainUrl}#AnchorGlarie">Galerie</a></li>
 
-                <li><a href="#AnchorProduse">Produse</a></li>
+                <li><a href="${mainUrl}#AnchorProduse">Produse</a></li>
 
-                <li><a href="#AnchorContact">Contact</a></li>
+                <li><a href="${mainUrl}#AnchorContact">Contact</a></li>
 
               </ul>
 
@@ -47,6 +52,7 @@ document.getElementById('footer1').innerHTML = `
 
           </div>
 `;
+
 
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();

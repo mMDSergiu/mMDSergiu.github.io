@@ -154,6 +154,11 @@
     margin-left: 30%;
     margin-right: 30%;
     transition: 100ms;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(220, 20, 220, 0.703);
+    -moz-box-shadow: 0 0 10px 1px rgb(220, 20, 220, 0.703);
+    -webkit-box-shadow: 0 0 10px 1px rgb(220, 20, 220, 0.703);
+    -o-box-shadow: 0 0 10px 1px rgb(220, 20, 220, 0.703);
     
 }
 
@@ -165,6 +170,7 @@ ul.slides {
     padding: 0;
     overflow: hidden;
     list-style: none;
+    border-radius: 10px;
 }
 
 
@@ -254,6 +260,7 @@ ul.slides input {
     width: auto;
     min-width: 100%;
     height: 100%;
+
 }
 
 .carousel-controls {
@@ -351,7 +358,7 @@ input:checked + .slide-container .nav label { display: block; }
     padding: 50px;
     padding-top: 20px;
     border-radius: 60px;
-    background: rgb(2, 2, 2);
+    background: rgb(10, 10, 10);
     margin-bottom: 120px;
     padding-bottom: 75px;
     box-shadow: 0 0 20px 5px rgb(20, 174, 220);

@@ -7,6 +7,7 @@ const mainUrl1 = isHome ? '' : '.';
 const isHome2 = document.getElementById('header').getAttribute('data-page') === 'home';
 const mainUrl2 = isHome ? '' : '.';
 
+
 document.getElementById('header').innerHTML = `  
 <input type="checkbox" aria-label="Toggle menu"/>
 <span></span>
@@ -15,7 +16,7 @@ document.getElementById('header').innerHTML = `
 
 
 <a href="https://www.instagram.com/neonlux_shop/" target="_blank" class="meniu-logo">
-  <img src="./img/Pozele Home/Logo/Psite-01.png" alt="NeonLux">
+  <img src="${mainUrl2}./img/Pozele Home/Logo/Psite-01.png" alt="NeonLux">
 </a>
 
 
