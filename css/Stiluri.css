@@ -1337,6 +1337,22 @@ hr {
 
 
 
+.progress-container {
+  position: fixed;
+  top: 80px;
+  z-index: 9;
+  width: 100%;
+  height: 2px;
+}
+
+.progress-bar {
+  height: 2px;
+  width: 0%;
+}
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .meniu-container a{
@@ -1448,6 +1464,10 @@ hr {
 
 
 @media only screen and (max-width: 1024px) {
+  .progress-container{
+    top: 105px;
+  }
+
   .contact-wrapper {
     display: flex;
     flex-direction: column;
