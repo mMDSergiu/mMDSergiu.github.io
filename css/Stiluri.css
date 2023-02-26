@@ -27,7 +27,7 @@ html {
   padding: 50px;
   padding-top: 25px;
   border-radius: 25px;
-  background: rgb(13, 13, 13);
+  background: rgb(12, 12, 12);
   margin-bottom: 120px;
   padding-bottom: 75px;
   box-shadow: 0 0 20px 3px rgb(20, 174, 220);
@@ -1033,7 +1033,7 @@ a {
 
 .section-header {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
   padding: 40px 0;
   font: 300 60px "Sofia", sans-serif;
   color: #f760b4;;
@@ -1133,15 +1133,15 @@ textarea {
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 25px;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 20px;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 15px;
 }
 
 .contact-text a {
@@ -1214,7 +1214,7 @@ textarea {
 
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
-  color: #555;
+  color: #969696;
   letter-spacing: 1px;
   text-align: center;
   margin-top: 10px;
@@ -1236,7 +1236,7 @@ hr {
 }
 
 .cincia {
-  margin-top: 240px;
+  margin-top: 140px;
   margin-bottom: 150px;
   background-color: #000;
   height: 100px;
@@ -1274,14 +1274,14 @@ hr {
 
 
 #AnchorContact {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
 
 #AnchorGlarie {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 130px;
 }
 #AnchorNoi {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 140px;
 }
 
 .upper-part {
@@ -1655,6 +1655,7 @@ hr {
     margin-top: 60px;
     max-width: 300px;
   }
+
 }
 
 @media only screen and (max-width: 569px) {
