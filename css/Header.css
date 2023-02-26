@@ -30,6 +30,7 @@
 }
 .navbar .menu-list{
   display: inline-flex;
+  padding-left: 5.5%;
 }
 .menu-list li{
   list-style: none;
@@ -90,7 +91,7 @@
   display: none;
   left: auto;
   right: auto;
-  margin-left: 25px;
+  margin-left: 10%;
 }
 .menu-list .cancel-btn{
   position: absolute;
@@ -110,17 +111,18 @@
     padding: 0 40px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .content{
     padding: 0 30px;
   }
 }
-@media (max-width: 868px) {
+@media (max-width: 999px) {
   body.disabled{
     overflow: hidden;
   }
   .icon{
     display: block;
+    font-size: 50px;
   }
   .icon.hide{
     display: none;

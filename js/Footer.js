@@ -33,7 +33,7 @@ document.getElementById('footer1').innerHTML = `
 
           <div class="footer-bottom">
 
-            <p>Copyright &copy <span id="year"></span> <a href="https://www.instagram.com/neonlux_shop/" target="_blank">@neonlux_shop</a> </p>
+            <p>Copyright &copy <span id="year"></span> <a href="https://www.instagram.com/sergiu.catanoi/" target="_blank">Sergiu Cătănoi</a> </p>
 
             <div class="footer-menu">
 
