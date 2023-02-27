@@ -1339,7 +1339,7 @@ hr {
 
 .progress-container {
   position: fixed;
-  top: 80px;
+  top: 75px;
   z-index: 9;
   width: 100%;
   height: 2px;
@@ -1465,7 +1465,8 @@ hr {
 
 @media only screen and (max-width: 1024px) {
   .progress-container{
-    top: 105px;
+    top: 95px;
+    z-index: 1;
   }
 
   .contact-wrapper {
