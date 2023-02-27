@@ -626,18 +626,51 @@ input[type=radio] {
 
 }
 
-
-
-.containerD {
-  margin-bottom: 50px;
-  display: flex;
-  margin: auto;
-
-}
-
 .titluproduse {
   opacity: 100%;
   color: red;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main > div {
+  width: calc(100% / 3 - 20px);
+  
+  margin-right: 30px;
+}
+
+.main div:last-of-type {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1024px)  {
+  .main > div {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 30px;
+  }
+
+
+  .main > div > .containerD .cardD .face{
+   width: 90%;
+   left: auto;
+   right: auto;
+  }
+
+}
+
+.containerD:hover .Cutia3{
+  height: ;
+}
+
+.containerD {
+  display: flex;
+  margin: 0;
+  
 }
 
 .containerD .cardD {
@@ -647,8 +680,8 @@ input[type=radio] {
 .containerD .cardD .face {
   transition: .4s;
   position: absolute;
-  width: 60%;
-  height: 250px;
+  width: 100%;
+  height: 400px;
   margin: auto;
   bottom: 50px;
   border-radius: 20px;
@@ -662,12 +695,13 @@ input[type=radio] {
   align-content: center;
   align-items: center;
   z-index: 1;
-  transform: translateY(150px);
+  transform: translateY(50px);
   border-radius: 17px;
+ 
 }
 
 .containerD .cardD:hover .face.face1 {
-  transform: translateY(0);
+  transform: translateY(-0);
   box-shadow:
     inset 0 0 60px whitesmoke,
     inset 20px 0 80px #f0f,
@@ -681,7 +715,7 @@ input[type=radio] {
 }
 
 
-.containerD .cardD .face.face1 .content {
+.containerD .cardD .face.face1 .contentbox {
   opacity: 0.7;
   transition: 0.5s;
   text-align: center;
@@ -689,19 +723,19 @@ input[type=radio] {
 
 }
 
-.containerD .cardD:hover .face.face1 .content {
+.containerD .cardD:hover .face.face1 .contentbox {
   opacity: 1;
 
 }
 
-.containerD .cardD .face.face1 .content i {
+.containerD .cardD .face.face1 .contentbox i {
   font-size: 3em;
   color: white;
   display: inline-block;
 
 }
 
-.containerD .cardD .face.face1 .content h3 {
+.containerD .cardD .face.face1 .contentbox h3 {
   font-size: 1em;
   color: white;
   text-align: center;
@@ -709,7 +743,7 @@ input[type=radio] {
 
 }
 
-.containerD .cardD .face.face1 .content a {
+.containerD .cardD .face.face1 .contentbox a {
   transition: .5s;
 }
 
@@ -722,7 +756,7 @@ input[type=radio] {
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
-  transform: translateY(-100px);
+  transform: translateY(-350px);
 }
 
 
@@ -732,15 +766,16 @@ input[type=radio] {
 
 }
 
-.containerD .cardD .face.face2 .content p,
+.containerD .cardD .face.face2 .contentbox p,
 a {
-  font-size: 10pt;
+  font-size: 15px;
   margin: 0;
   padding: 0;
   color: #333;
+  line-height: 1.4;
 }
 
-.containerD .cardD .face.face2 .content a {
+.containerD .cardD .face.face2 .contentbox a {
   text-decoration: none;
   color: black;
   box-sizing: border-box;
@@ -750,265 +785,7 @@ a {
   display: inline-block;
 }
 
-.containerD .cardD .face.face2 .content a:hover {
-  background: #333;
-  color: whitesmoke;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-
-
-
-.containerA {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  display: flex;
-  margin: auto;
-}
-
-.containerA .cardA {
-  position: relative;
-
-}
-
-.containerA .cardA .face {
-
-  transition: .4s;
-  position: absolute;
-  width: 60%;
-  height: 250px;
-  margin: auto;
-  bottom: 50px;
-  border-radius: 20px;
-}
-
-.containerA .cardA .face.face1 {
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(150px);
-  border-radius: 17px;
-}
-
-.containerA .cardA:hover .face.face1 {
-  transform: translateY(0);
-  box-shadow:
-    inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-
-}
-
-
-.containerA .cardA .face.face1 .content {
-  opacity: 0.7;
-  transition: 0.5s;
-  text-align: center;
-
-
-}
-
-.containerA .cardA:hover .face.face1 .content {
-  opacity: 1;
-
-}
-
-.containerA .cardA .face.face1 .content i {
-  font-size: 3em;
-  color: white;
-  display: inline-block;
-
-}
-
-.containerA .cardA .face.face1 .content h3 {
-  font-size: 1em;
-  color: white;
-  text-align: center;
-
-
-}
-
-.containerA .cardA .face.face1 .content a {
-  transition: .5s;
-}
-
-.containerA .cardA .face.face2 {
-  position: relative;
-  background: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
-  transform: translateY(-100px);
-}
-
-
-.containerA .cardA:hover .face.face2 {
-  transform: translateY(0);
-
-}
-
-.containerA .cardA .face.face2 .content p,
-a {
-  font-size: 10pt;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-.containerA .cardA .face.face2 .content a {
-  text-decoration: none;
-  color: black;
-  box-sizing: border-box;
-  outline: 1px dashed #333;
-  padding: 10px;
-  margin: 15px 0 0;
-  display: inline-block;
-}
-
-.containerA .cardA .face.face2 .content a:hover {
-  background: #333;
-  color: whitesmoke;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-
-
-
-.containerC {
-  margin-bottom: 50px;
-
-  display: flex;
-  margin: auto;
-}
-
-.containerC .cardC {
-  position: relative;
-
-}
-
-.containerC .cardC .face {
-
-  transition: .4s;
-  position: absolute;
-  border-radius: 20px;
-  width: 60%;
-  height: 250px;
-  margin: auto;
-  bottom: 50px;
-
-}
-
-.containerC .cardC .face.face1 {
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(150px);
-  border-radius: 17px;
-
-}
-
-.containerC .cardC:hover .face.face1 {
-  transform: translateY(0);
-  box-shadow:
-    inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-}
-
-
-
-
-.containerC .cardC .face.face1 .content {
-  opacity: 0.7;
-  transition: 0.5s;
-  text-align: center;
-
-
-}
-
-.containerC .cardC:hover .face.face1 .content {
-  opacity: 1;
-
-}
-
-.containerC .cardC .face.face1 .content i {
-  font-size: 3em;
-  color: white;
-  display: inline-block;
-
-}
-
-.containerC .cardC .face.face1 .content h3 {
-  font-size: 1em;
-  color: white;
-  text-align: center;
-
-
-}
-
-.containerC .cardC .face.face1 .content a {
-  transition: .5s;
-
-}
-
-.containerC .cardC .face.face2 {
-  position: relative;
-  background: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
-  transform: translateY(-100px);
-}
-
-
-.containerC .cardC:hover .face.face2 {
-  transform: translateY(0);
-
-}
-
-.containerC .cardC .face.face2 .content p,
-a {
-  font-size: 10pt;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-.containerC .cardC .face.face2 .content a {
-  text-decoration: none;
-  color: black;
-  box-sizing: border-box;
-  outline: 1px dashed #333;
-  padding: 10px;
-  margin: 15px 0 0;
-  display: inline-block;
-}
-
-.containerC .cardC .face.face2 .content a:hover {
+.containerD .cardD .face.face2 .contentbox a:hover {
   background: #333;
   color: whitesmoke;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -1339,7 +1116,7 @@ hr {
 
 .progress-container {
   position: fixed;
-  top: 75px;
+  top: 70px;
   z-index: 9;
   width: 100%;
   height: 2px;
@@ -1391,17 +1168,14 @@ hr {
     margin-right: 50px;
    }
 
-   .containerD .cardD .face.face2 .content p{
-    font-size: 15px;
-   }
+   
+  .containerD .cardD .face.face2 .contentbox p, a{
+  font-size: 25px;
+}
+.containerD .cardD .face.face1 .contentbox h3{
+  font-size: 2em;
+}
 
-   .containerA .cardA .face.face2 .content p{
-    font-size: 15px;
-   }
-
-   .containerC .cardC .face.face2 .content p{
-    font-size: 15px;
-   }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1452,13 +1226,6 @@ hr {
     font-size: 20px;
    }
 
-  .containerA .cardA .face.face2 .content p{
-    font-size: 20px;
-   }
-
-  .containerC .cardC .face.face2 .content p{
-    font-size: 20px;
-   }
 }
 
 
@@ -1520,6 +1287,8 @@ hr {
     transition: 300ms;
 
   }
+
+  
 }
 
 
@@ -1597,67 +1366,10 @@ hr {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .containerD .cardD .face {
-    height: 400px;
-  }
-
-  .containerD .cardD .face.face2 {
-    transform: translateY(-250px);
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  .containerD .cardD .face {
-    height: 450px;
-  }
-
-  .containerD .cardD .face.face2 {
-    transform: translateY(-300px);
-  }
-}
 
 
-@media only screen and (max-width: 640px) {
-  .containerA .cardA .face {
-    height: 400px;
-  }
-
-  .containerA .cardA .face.face2 {
-    transform: translateY(-250px);
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  .containerA .cardA .face {
-    height: 450px;
-  }
-
-  .containerA .cardA .face.face2 {
-    transform: translateY(-250px);
-  }
-}
 
 
-@media only screen and (max-width: 640px) {
-  .containerC .cardC .face {
-    height: 400px;
-  }
-
-  .containerC .cardC .face.face2 {
-    transform: translateY(-250px);
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  .containerC .cardC .face {
-    height: 450px;
-  }
-
-  .containerC .cardC .face.face2 {
-    transform: translateY(-300px);
-  }
-}
 
 
 
