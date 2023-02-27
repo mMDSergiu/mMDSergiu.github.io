@@ -638,9 +638,9 @@ input[type=radio] {
 }
 
 .main > div {
-  width: calc(100% / 3 - 20px);
-  
-  margin-right: 30px;
+  width: calc(100% / 3 - 25px);
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .main div:last-of-type {
