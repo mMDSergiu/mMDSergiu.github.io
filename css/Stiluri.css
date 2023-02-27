@@ -660,21 +660,25 @@ input[type=radio] {
    left: auto;
    right: auto;
   }
-
+  
+  .main > div > .containerD .cardD {
+    
+    height: auto;
+  }
 }
 
-.containerD:hover .Cutia3{
-  height: ;
-}
+
 
 .containerD {
   display: flex;
   margin: 0;
+  z-index: 3;
   
 }
 
 .containerD .cardD {
   position: relative;
+  height: 470px;
 }
 
 .containerD .cardD .face {
