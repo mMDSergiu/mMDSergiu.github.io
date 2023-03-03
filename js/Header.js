@@ -17,18 +17,18 @@ document.getElementById('header').innerHTML = `
     <div class="icon cancel-btn">
       <i class="fas fa-times"></i>
     </div>
-    <li><a href="${mainUrl}#AnchorNoi">Despre Noi</a></li>
-    <li><a href="${mainUrl}#AnchorGlarie">Galerie</a></li>
-    <li><a href="${mainUrl}#AnchorProduse">Produse</a></li>
-    <li><a href="${mainUrl}#AnchorContact">Contact</a></li>
+    <li><a href="./${mainUrl}#AnchorNoi">Despre Noi</a></li>
+    <li><a href="./${mainUrl}#AnchorGlarie">Galerie</a></li>
+    <li><a href="./${mainUrl}#AnchorProduse">Produse</a></li>
+    <li><a href="./${mainUrl}#AnchorContact">Contact</a></li>
 
   </ul>
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
   </div>
   <ul class="log">
-  <li><a href="${mainUrl1}./pages/Register.html">Creare Cont</a></li>
-  <li><a href="${mainUrl1}./pages/Login.html">Logare</a></li>
+  <li><a href="./${mainUrl1}./pages/Register.html">Creare Cont</a></li>
+  <li><a href="./${mainUrl1}./pages/Login.html">Logare</a></li>
   </ul>
 </div>
 </nav>

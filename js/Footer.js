@@ -39,13 +39,13 @@ document.getElementById('footer1').innerHTML = `
 
               <ul class="f-menu">
 
-                <li><a href="${mainUrl}#AnchorNoi">DespreNoi</a></li>
+                <li><a href="./${mainUrl}#AnchorNoi">DespreNoi</a></li>
 
-                <li><a href="${mainUrl}#AnchorGlarie">Galerie</a></li>
+                <li><a href="./${mainUrl}#AnchorGlarie">Galerie</a></li>
 
-                <li><a href="${mainUrl}#AnchorProduse">Produse</a></li>
+                <li><a href="./${mainUrl}#AnchorProduse">Produse</a></li>
 
-                <li><a href="${mainUrl}#AnchorContact">Contact</a></li>
+                <li><a href="./${mainUrl}#AnchorContact">Contact</a></li>
 
               </ul>
 
