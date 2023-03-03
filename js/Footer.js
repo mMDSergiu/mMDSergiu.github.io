@@ -1,5 +1,5 @@
 const isHomeFooter = document.getElementById('footer1').getAttribute('data-page') === 'home1';
-const mainUrlFooter = isHomeFooter ? '' : '../Index.html';
+const mainUrlFooter = isHomeFooter ? '' : './../Index.html';
 
 
 

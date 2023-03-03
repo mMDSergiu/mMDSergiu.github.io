@@ -1,5 +1,5 @@
 const isHome = document.getElementById('header').getAttribute('data-page') === 'home';
-const mainUrl = isHome ? '' : '../Index.html';
+const mainUrl = isHome ? '' : './../Index.html';
 
 const isHome1 = document.getElementById('header').getAttribute('data-page') === 'home';
 const mainUrl1 = isHome ? '' : '.';
