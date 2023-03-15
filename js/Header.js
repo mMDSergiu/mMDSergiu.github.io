@@ -4,6 +4,9 @@ const mainUrl = isHome ? '' : './../Index.html';
 const isHome1 = document.getElementById('header').getAttribute('data-page') === 'home';
 const mainUrl1 = isHome ? '' : '.';
 
+const isHome12 = document.getElementById('header').getAttribute('data-page') === 'home';
+const mainUrl12 = isHome ? '' : '.';
+
 
 
 
@@ -11,7 +14,7 @@ document.getElementById('header').innerHTML = `
 <nav class="navbar">
 <div class="content">
   <div class="logo">
-    <a href="https://www.instagram.com/neonlux_shop/"  target="_blank">NeonLux</a>
+    <a href="${mainUrl}#AnchorTop">NeonLux</a>
   </div>
   <ul class="menu-list">
     <div class="icon cancel-btn">

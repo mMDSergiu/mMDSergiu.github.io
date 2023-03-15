@@ -1050,11 +1050,6 @@ hr {
 
 
 
-
-
-
-
-
 #AnchorContact {
   scroll-margin-top: 80px;
 }
@@ -1064,6 +1059,9 @@ hr {
 }
 #AnchorNoi {
   scroll-margin-top: 140px;
+}
+#AnchorTop{
+  scroll-margin-top: 150px;
 }
 
 .upper-part {
