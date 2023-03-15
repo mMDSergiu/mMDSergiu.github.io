@@ -1051,18 +1051,21 @@ hr {
 
 
 #AnchorContact {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 50px;
 }
 
 #AnchorGlarie {
-  scroll-margin-top: 130px;
+  scroll-margin-top: 100px;
 }
 #AnchorNoi {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 120px;
 }
 #AnchorTop{
   scroll-margin-top: 150px;
 }
+#AnchorProduse{
+scroll-margin-top: -10px;
+} 
 
 .upper-part {
   cursor: pointer;
