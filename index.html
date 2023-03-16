@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>NeonLux | Acasă</title>
+  <title>Test2</title>
   <link rel="shortcut icon" href="img/Pozele Home/Logo/LogoFinal cerc.png">
   <link rel="stylesheet" href="./css/Stiluri.css">
   <link rel="stylesheet" href="./css/BG.css">
@@ -46,10 +46,16 @@
    
 
     <br>
-    <div align="center" class="Pozasus" style="margin-top: -50px; margin-bottom: -50px;">
-      <img src="./img/Pozele Home/Logo/Logo transparent.png" style="margin-top: 50px; margin-bottom: 50px;" width="360px" height="300px" id="AnchorTop">
-      <br><br id="AnchorNoi">
-    </div>
+    <div class="Enter" >
+      <img src="./img/Pozele Home/Logo/Logo transparent.png" style="width: 100%; width: 200px; padding-top: 8%;">
+<h3>Bun venit la <span style="color: rgb(20, 174, 220);">Neon</span><span style="color: #f760b4;">Lux</span>!</h3>
+<p>Suntem o companie în plină dezvoltare, creatoare de produse în stil neon, personalizate și de calitate înaltă!<br>
+Produsele nnoastre sunt create pentru a trezi amintiri plăcute și a schimnba atmosfera oricărei camere în care s-ar afla!<br>
+Din gama noastră de produse fac parte: <span style="font-style: italic; font-weight: bold; color: rgb(20, 174, 220);">Lămpi Mici</span>, <span style="font-style: italic; font-weight: bold; color: #e362a9;">Lămpi Medii</span> și <span style="font-style: italic;font-weight: bold; font-weight: bold; color: rgb(20, 174, 220)">Leduri de Colț</span>.<br>
+Lămpile pot fi personalizate după bunul plac!<br><br>
+<button onclick="window.location.href='#AnchorNoi';">Continuă</button>
+</p>
+</div>
 
 
 
@@ -118,7 +124,7 @@
     
     <section class="prima">
       <div class="Cutia1">
-        <h1>∘ Cine suntem noi?</h1>
+        <h1 id="AnchorNoi">∘ Cine suntem noi?</h1>
 
         <p style="margin-bottom: 30px;">Suntem o companie recent fondată dar cu idei și ambiții mărețe. Producem și
           comercializăm suvenire personalizate precum lămpile 3D
@@ -143,9 +149,9 @@
           Dacă doriți să aflați mai multe despre produse apăsți aici:
           <br>
           <br>
-          <p id="start">
-          <button id="button5" onclick="window.location.href='#AnchorProduse';"><a>Produse</a></button>
         </p>
+          <button class="button-product" onclick="window.location.href='#AnchorProduse';">Produse</button>
+    
 
 
       </div>
@@ -642,7 +648,9 @@
               <br>
               <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                 <div class="alt-send-button">
-                  <i class="fa fa-paper-plane"></i><span class="send-text">Trimite</span>
+                
+                  <i class="fa fa-paper-plane" style="margin-top: 5px; margin-left: 10px;"></i><span class="send-text" style="margin-left: -10px;">Trimite</span>
+                
                 </div>
 
               </button>

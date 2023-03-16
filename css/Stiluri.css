@@ -3,10 +3,35 @@
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
+.Enter {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  background-image: url('../img/Special/pozaprincipala.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-height: 80vh;
+  width: 100%;
+  box-shadow: 0 0 50px 8px rgb(0, 0, 0);
+}
 
+.Enter h3 {
+  padding-top: 1%;
+  font-size: 45px;
 
+}
+
+.Enter p {
+  padding: 20px;
+  font-size: 17px;
+  line-height: 25px;
+  padding-bottom: 15%;
+  padding-bottom: 100%;
+}
 
 html {
   scroll-behavior: smooth;
@@ -17,12 +42,52 @@ html {
 }
 
 
+.Enter button {
+  min-width: 130px;
+  height: 45px;
+  color: #ffffff00;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  outline: none;
+  border-radius: 15px;
+  z-index: 0;
+  background: #0051ff1e;
+  overflow: hidden;
+  border: 2px solid #f441a5;
+  color: #f441a5;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.Enter button:hover {
+  color: #fff;
+}
+
+.Enter button:hover:after {
+  width: 100%;
+}
+
+.Enter button:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #f441a5;
+}
 
 
 .Cutia1 {
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 25px;
+  margin-top: 80px;
   max-width: auto;
   padding: 50px;
   padding-top: 25px;
@@ -36,7 +101,7 @@ html {
   -o-box-shadow: 0 0 20px 3px rgb(20, 174, 220);
   filter: brightness(80%);
   transition: 200ms;
-  
+
 
 }
 
@@ -50,13 +115,13 @@ html {
 
 }
 
-.Cutia1:hover h1{
+.Cutia1:hover h1 {
   color: #7bbcfe;
-  text-shadow: 
-  0 0 5px #0077ff,
-  0 0 10px #0077ff, 
-  0 0 28px #005cc6;
-   transition: 1500ms;
+  text-shadow:
+    0 0 5px #0077ff,
+    0 0 10px #0077ff,
+    0 0 28px #005cc6;
+  transition: 1500ms;
 }
 
 
@@ -84,37 +149,49 @@ html {
 
 
 
-button {
-  position: absolute;
-  border: none;
-  color: #ffffff;
-  width: 9.5em;
-  height: 3.5em;
-  line-height: 2em;
-  text-align: center;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4, #f441a5);
-  background-size: 300%;
-  border-radius: 30px;
+
+.button-product {
+  min-width: 130px;
+  height: 45px;
+  color: #ffffff00;
+  padding: 5px 10px;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  outline: none;
+  border-radius: 15px;
+  z-index: 0;
+  background: #0051ff1e;
+  overflow: hidden;
+  border: 2px solid #f441a5;
+  color: #f441a5;
+  position: relative;
   z-index: 1;
-  margin-top: 0px;
-}
-
-#start {
-  padding-bottom: 10px;
-}
-
-#start a {
-  color: white;
   font-size: 20px;
 }
 
-
-
-button:hover {
-  animation: animation 8s linear infinite;
-  border: none;
+.button-product:hover {
+  color: #ffffff;
 }
+
+.button-product:hover:after {
+  width: 100%;
+}
+
+.button-product:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #f441a5;
+}
+
+
 
 @keyframes animation {
   0% {
@@ -126,23 +203,6 @@ button:hover {
   }
 }
 
-button:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4, #f441a5);
-  background-size: 400%;
-  border-radius: 35px;
-  transition: 1s;
-}
-
-button:hover::before {
-  filter: blur(20px);
-}
 
 
 
@@ -183,22 +243,22 @@ button:hover::before {
   margin-top: 30px;
 }
 
-.Cutia2:hover h1{
+.Cutia2:hover h1 {
   color: #fc8ff4;
-  text-shadow: 
-  0 0 5px #fc5bb3,
-  0 0 10px #fc5bb3, 
-  0 0 38px #fd38a4;
+  text-shadow:
+    0 0 5px #fc5bb3,
+    0 0 10px #fc5bb3,
+    0 0 38px #fd38a4;
   transition: 1500ms;
   font-size: 55px;
-  
+
 }
 
 .Cutia2 p {
   color: #ffa3f9;
   text-decoration: italic;
   font-family: Geneva, Verdana, sans-serif;
-text-align: center;
+  text-align: center;
   background: local;
   padding: 0;
   font-size: 15px;
@@ -242,7 +302,7 @@ input[type=radio] {
 }
 
 .container1 {
- 
+
   max-width: 800px;
   max-height: 500px;
   height: 500px;
@@ -616,14 +676,14 @@ input[type=radio] {
   margin-right: 10%;
 }
 
-.Cutia3:hover h1{
+.Cutia3:hover h1 {
   color: #fc8ff4;
-  text-shadow: 
-  0 0 5px #fc5bb3,
-  0 0 10px #fc5bb3, 
-  0 0 38px #fd38a4;
-   transition: 1500ms;
-   font-size: 55px;
+  text-shadow:
+    0 0 5px #fc5bb3,
+    0 0 10px #fc5bb3,
+    0 0 38px #fd38a4;
+  transition: 1500ms;
+  font-size: 55px;
 
 }
 
@@ -638,7 +698,7 @@ input[type=radio] {
   flex-wrap: wrap;
 }
 
-.main > div {
+.main>div {
   width: calc(100% / 3 - 25px);
   margin-left: 10px;
   margin-right: 20px;
@@ -648,22 +708,22 @@ input[type=radio] {
   margin-right: 0;
 }
 
-@media only screen and (max-width: 1024px)  {
-  .main > div {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 30px;
+@media only screen and (max-width: 1024px) {
+  .main>div {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 30px;
   }
 
 
-  .main > div > .containerD .cardD .face{
-   width: 90%;
-   left: auto;
-   right: auto;
+  .main>div>.containerD .cardD .face {
+    width: 90%;
+    left: auto;
+    right: auto;
   }
-  
-  .main > div > .containerD .cardD {
-    
+
+  .main>div>.containerD .cardD {
+
     height: auto;
   }
 }
@@ -674,7 +734,7 @@ input[type=radio] {
   display: flex;
   margin: 0;
   z-index: 3;
-  
+
 }
 
 .containerD .cardD {
@@ -703,7 +763,7 @@ input[type=radio] {
   z-index: 1;
   transform: translateY(50px);
   border-radius: 17px;
- 
+
 }
 
 .containerD .cardD:hover .face.face1 {
@@ -812,7 +872,8 @@ a {
   margin-top: 10px;
   padding: 40px 0;
   font: 300 60px "Sofia", sans-serif;
-  color: #f760b4;;
+  color: #f760b4;
+  ;
   letter-spacing: 3px;
 }
 
@@ -849,29 +910,54 @@ a {
 
 .form-control2,
 textarea {
-  max-width: 400px;
+  max-width: 399px;
   background-color: rgb(20, 20, 20);
   color: rgb(169, 169, 169);
   letter-spacing: 1px;
   border-radius: 5px;
   border-color: rgb(0, 221, 255);
-
   padding: 8px;
-
 }
 
+
+
+
+
+
+
+
 .send-button {
-  margin-top: 5px;
-  height: 34px;
-  width: 400px;
+  min-width: 400px;
+  height: 35px;
+  color: #ffffff00;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #0051ff1e;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  border: 2px solid #f441a5;
+  color: #f441a5;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
 }
 
 .alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 45%;
+
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #f441a5;
 }
 
 .send-text {
@@ -881,10 +967,17 @@ textarea {
   letter-spacing: 2px;
 }
 
-.alt-send-button:hover {
+.send-button:hover .alt-send-button {
   transform: translate3d(0px, -29px, 0px);
 }
 
+.send-button:hover:after {
+  width: 100%;
+}
+
+.send-button:hover{
+  color: #fff;
+}
 
 .direct-contact-container {
   max-width: 400px;
@@ -1051,15 +1144,18 @@ hr {
 #AnchorGlarie {
   scroll-margin-top: 100px;
 }
+
 #AnchorNoi {
-  scroll-margin-top: 120px;
-}
-#AnchorTop{
   scroll-margin-top: 150px;
 }
-#AnchorProduse{
-scroll-margin-top: -10px;
-} 
+
+#AnchorTop {
+  scroll-margin-top: 150px;
+}
+
+#AnchorProduse {
+  scroll-margin-top: -10px;
+}
 
 .upper-part {
   cursor: pointer;
@@ -1132,56 +1228,80 @@ scroll-margin-top: -10px;
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .meniu-container a{
+  .meniu-container a {
     font-size: 20px;
   }
-  
-  .Cutia1{
+
+  .Cutia1 {
     margin-left: 50px;
     margin-right: 50px;
     padding: 40px;
     height: auto;
 
-   }
-   #start {
-    padding-bottom: 80px;
-   }
+  }
 
-   button{
-    width: 13.5em;
-    height: 5.5em;
-    margin-top: -10px;
-   }
 
-   .Cutia2{
+
+  .Cutia2 {
     margin-left: 50px;
     margin-right: 50px;
-   }
+  }
 
-   .Cutia2 p{
- font-size: 20px;
-   }
+  .Cutia2 p {
+    font-size: 20px;
+  }
 
-   
 
-   .Cutia3{
+
+  .Cutia3 {
     margin-left: 50px;
     margin-right: 50px;
-   }
+  }
 
-   
-  .containerD .cardD .face.face2 .contentbox p, a{
-  font-size: 25px;
-}
-.containerD .cardD .face.face1 .contentbox h3{
-  font-size: 2em;
-}
 
+  .containerD .cardD .face.face2 .contentbox p,
+  a {
+    font-size: 25px;
+  }
+
+  .containerD .cardD .face.face1 .contentbox h3 {
+    font-size: 2em;
+  }
+
+  .Enter {
+    max-height: 120vh;
+    margin-top: -100px;
+  }
+
+  .Enter h3 {
+    padding-top: 5%;
+    font-size: 70px;
+
+  }
+
+  .Enter p {
+    padding: 20px;
+    font-size: 28px;
+    line-height: 35px;
+    padding-bottom: 100px;
+  }
+
+  .button-product {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .Enter button {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
 
-  
+
   .meniu-container a {
     font-size: 20px;
   }
@@ -1195,22 +1315,11 @@ scroll-margin-top: -10px;
     border-radius: 50px;
   }
 
-  #start {
-    padding-bottom: 80px;
-
-  }
-
-  button {
-    width: 13.5em;
-    height: 5.5em;
- 
-  }
-
   .Cutia2 {
     margin-left: 25px;
     margin-right: 25px;
     border-radius: 50px;
-    
+
   }
 
   .mergi {
@@ -1223,16 +1332,53 @@ scroll-margin-top: -10px;
     border-radius: 50px;
   }
 
-  .containerD .cardD .face.face2 .content p{
+  .containerD .cardD .face.face2 .content p {
     font-size: 20px;
-   }
+  }
 
+  .Enter {
+    max-height: 100vh;
+    margin-top: -100px;
+  }
+
+  .Enter h3 {
+    padding-top: 5%;
+    font-size: 70px;
+
+  }
+
+  .Enter p {
+    padding: 20px;
+    font-size: 28px;
+    line-height: 35px;
+    padding-bottom: 100px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .button-product {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .Enter button {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 499px) and (max-width: 548px) {
+  .Enter {
+    margin-top: -80px;
+  }
 }
 
 
 
 @media only screen and (max-width: 1024px) {
-  .progress-container{
+  .progress-container {
     top: 95px;
     z-index: 1;
   }
@@ -1289,7 +1435,7 @@ scroll-margin-top: -10px;
 
   }
 
-  
+
 }
 
 
@@ -1327,6 +1473,7 @@ scroll-margin-top: -10px;
     transition: 300ms;
 
   }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1440,5 +1587,3 @@ scroll-margin-top: -10px;
     width: 99%;
   }
 }
-
-
