@@ -29,7 +29,7 @@ $("input[type='checkbox']").change(function() {
     
    
     setTimeout(function() {
-      $('.big-text').text(' Ooops... Se pare că te ai pierdut...').css('color', '#fff');
+      $('.big-text').text(' Ooops... Se pare că te-ai pierdut...').css('color', '#fff');
       $('.big-text').removeClass('fadeIn');
       $('.big-text').addClass('flash');
       $('.small-text').text('Te rog aprinde lumina!').css('color', '#fff');
