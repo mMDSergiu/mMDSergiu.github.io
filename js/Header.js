@@ -4,8 +4,7 @@ const mainUrl = isHome ? '' : './../Index.html';
 const isHome1 = document.getElementById('header').getAttribute('data-page') === 'home';
 const mainUrl1 = isHome ? '' : '.';
 
-const isHome12 = document.getElementById('header').getAttribute('data-page') === 'home';
-const mainUrl12 = isHome ? '' : '.';
+
 
 
 
