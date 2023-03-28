@@ -148,7 +148,7 @@
             <div class="card-form__group">
               <label for="cardMonth" class="card-input__label">Data de Expirare</label>
               <select class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
-                <option value="" disabled selected>Month</option>
+                <option value="" disabled selected>Luna</option>
                 <option v-bind:value="n < 10 ? '0' + n : n" v-for="n in 12" v-bind:disabled="n < minCardMonth" v-bind:key="n">
                     {{n < 10 ? '0' + n : n}}
                 </option>

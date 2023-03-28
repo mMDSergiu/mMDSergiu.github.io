@@ -33,7 +33,7 @@ document.getElementById('footer1').innerHTML = `
 
           <div class="footer-bottom">
 
-            <p>Copyright &copy <span id="year"></span> <a href="https://www.instagram.com/sergiu.catanoi/" target="_blank">Sergiu Cătănoi</a> </p>
+            <p>Copyright &copy <span id="year"></span> <a href="https://www.instagram.com/sergiu.catanoi/" target="_blank">Sergiu Cătănoi</a><a href="https://www.instagram.com/harisangc/" target="_blank"> & Haris Sarmaniuc</a> </p>
 
             <div class="footer-menu">
 
