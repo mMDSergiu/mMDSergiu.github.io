@@ -24,14 +24,15 @@ document.getElementById('header').innerHTML = `
     <li><a href="${mainUrl}#AnchorProduse">Produse</a></li>
     <li><a href="${mainUrl}#AnchorContact">Contact</a></li>
 
-  </ul>
+    <span class="log-site"><li><a href="${mainUrl1}./pages/Register.html">Creare Cont</a></li></span>
+    <span class="log-site"><li><a href="${mainUrl1}./pages/Login.html" style="margin-right: 0px;">Logare</a></li></span>
+ 
+    </ul>
+    <img src="./img/Special/BulbOn.png" id="icon">
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
   </div>
-  <ul class="log">
-  <li><a href="${mainUrl1}./pages/Register.html">Creare Cont</a></li>
-  <li><a href="${mainUrl1}./pages/Login.html">Logare</a></li>
-  </ul>
+
 </div>
 </nav>
 <div class="banner"></div>

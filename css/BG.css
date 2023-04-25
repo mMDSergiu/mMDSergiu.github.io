@@ -12,7 +12,7 @@
   height: 100%;
   border-radius: 50%;
   mix-blend-mode: screen;
-  background-image: radial-gradient(#99ffff, #99ffff 10%, rgba(153, 255, 255, 0) 56%);
+  background-image: radial-gradient(rgb(21, 177, 255), rgb(21, 177, 255) 10%, rgba(153, 255, 255, 0) 56%);
   -webkit-animation: fadein-frames 400ms infinite, scale-frames 10s infinite;
           animation: fadein-frames 400ms infinite, scale-frames 10s infinite;
 }
@@ -6060,4 +6060,3 @@
   -webkit-animation-delay: 2778ms;
           animation-delay: 2778ms;
 }
-

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
   }
 
@@ -16,7 +16,7 @@
   
   ::-webkit-scrollbar-thumb {
     background: rgb(23, 23, 23);
-    border-radius: 5px;
+    border-radius: 2px;
   }
   
   ::-webkit-scrollbar-track {

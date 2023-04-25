@@ -1,3 +1,12 @@
+
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+
+
 .content{
   max-width: 1250px;
   margin: auto;
@@ -32,7 +41,6 @@
 }
 .navbar .menu-list{
   display: inline-flex;
-  padding-left: 5.5%;
 }
 .menu-list li{
   list-style: none;
@@ -41,7 +49,7 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-right: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -67,7 +75,9 @@
   color:  rgb(21, 177, 255);
 }
 
-
+.log-site li a:hover{
+color: #FF5733;
+}
 
 .banner{
   height: 11vh;

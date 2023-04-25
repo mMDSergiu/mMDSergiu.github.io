@@ -60,7 +60,7 @@ footer {
   }
   
   .socials a:hover i {
-    color: aqua;
+    color: rgb(0, 153, 229);
   }
   
   .footer-bottom {
@@ -107,7 +107,7 @@ footer {
   }
   
   .footer-menu ul li a:hover {
-    color: #27bcda;
+    color: rgb(0, 153, 229);
     transition: 0.3s;
   }
 
