@@ -46,7 +46,7 @@ icon.onclick = function(){
   if(document.body.classList.contains("white-theme")){
     icon.src = "./img/Special/BulbOn.png";
   }else{
-    icon.src = "./img/Special/BulbOff.png"
+    icon.src = "./img/Special/BulbOff.png";
   }
 }
 
