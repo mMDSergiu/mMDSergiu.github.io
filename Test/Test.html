@@ -1,72 +1,52 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" href="Test.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Test.css">
 </head>
 <body>
-  <h1>My Website</h1>
-  <div class="box">
-      <h2>Box Heading</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere tincidunt augue, vel sagittis enim fermentum ut. Donec ut libero vel felis tincidunt dapibus at eget libero. Suspendisse dictum hendrerit eros, id laoreet dolor faucibus a. Nam nec lorem eu mi iaculis suscipit.</p>
+  <div id="language-buttons">
+    <button id="ro-btn" class="language-btn active" data-lang="ro">Română</button>
+    <button id="en-btn" class="language-btn" data-lang="en">English</button>
+    <button id="ru-btn" class="language-btn" data-lang="ru">Русский</button>
   </div>
-  <button class="toggle-btn"><i class="fas fa-lightbulb"></i></button>
+  <h1 class="lang-element ro"><span style="color: red;">Bun</span> venit!</h1>
+<h1 class="lang-element en" style="display: none;"><span style="color: red;">Wel</span>come!</h1>
+<h1 class="lang-element ru" style="display: none;"><span style="color: red;">Добро</span> пожаловать!</h1>
+
+<h2 class="lang-element ro">Acesta este site-ul meu.</h2>
+<h2 class="lang-element en" style="display: none;">This is my website.</h2>
+<h2 class="lang-element ru" style="display: none;">Это мой сайт.</h2>
+
+<p class="lang-element ro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="lang-element en" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="lang-element ru" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  
+<script>
+const languageBtns = document.querySelectorAll('.language-btn');
+const elements = document.querySelectorAll('.lang-element');
+
+languageBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang;
+    elements.forEach(el => {
+      if (el.classList.contains(lang)) {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  });
+});
 
 
-    <script src="Test.js"></script>
+</script>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="Test.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  </head>
-  </head>
-  <body>
-
-
-    <h1>My Website</h1>
-    <div class="box">
-        <h2>Box Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere tincidunt augue, vel sagittis enim fermentum ut. Donec ut libero vel felis tincidunt dapibus at eget libero. Suspendisse dictum hendrerit eros, id laoreet dolor faucibus a. Nam nec lorem eu mi iaculis suscipit.</p>
-        <button class="toggle-btn"><i class="fas fa-lightbulb"></i></button>
-    </div>
-
-      <script src="Test.js"></script>
-
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h1 id="title">Bun venit pe Website!</h1>
-    <p id="description">Lorem ipsum dolor sit <span id="span1" style="font-size: 50px; color: red; font-style: italic;">amet, consectetuer</span>> adipiscing elit. Aenean commodo ligula eget dolor. 
-        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-        ultricies nec, pellentesque eu, pretium quis, sem. 
-        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
-    <button id="romanian-button" onclick="setLanguage('romanian')">Română</button>
-    <button id="english-button" onclick="setLanguage('english')">English</button>
-    <button id="russian-button" onclick="setLanguage('russian')">Русский</button>
-    <script src="Test.js"></script>
-  </body>
-</html> -->
