@@ -49,7 +49,7 @@ icon.onclick = function () {
     icon.src = "./img/Special/BulbOff.png";
   }
 }
-
+//  ASdasda
 
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
