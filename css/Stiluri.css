@@ -9,12 +9,65 @@
 :root {
   --primary-color: #1c181d;
   --secundary-color: #fff;
+  --third-color: rgb(12, 12, 12);
+  --forth-color: #333;
+  --fifth-color: #333;
+  --sixth-color: white;
+  --seventh-color: rgb(0, 0, 0);
+  --eight-color: #000;
+  --nineth-color: #000;
+  --tenth-color: #ff5833ca;
+
+  --eleventh-color: rgb(0, 153, 229);
+  --twelf-color:#FF5733;
+  --tirth-color:rgb(29, 161, 226);
+
+  --blur-color: rgb(0, 170, 255);
+  --blur-second-color: rgb(255, 98, 0);
+
+  --text-forth-color:#005cc6;
+  --text-third-color:#0077ff;
+  --text-second-color:#0077ff; 
+  --text-first-color:#7bbcfe;
+  --text-sixth-color:rgb(21, 177, 255);
+}
+#icon{
+  width: 30px;
+  cursor: pointer;
 }
 
-/* :root{ 
+.white-theme{
+  --text-sixth-color: #FF5733;
+  --text-forth-color: #fb380c;
+  --text-third-color: #f95e3c;
+  --text-second-color: #fc896f; 
+  --text-first-color: #fda490;
+
+  --twelf-color: rgb(0, 153, 229);
+  --eleventh-color: #FF5733;
+  --tirth-color: #fa6c4c;
+
+  --blur-color: rgb(255, 98, 0);
+  --blur-second-color:rgb(0, 170, 255);
+
+  --tenth-color: rgb(0, 153, 229); 
+  --nineth-color: rgb(24, 24, 24);
+  --eight-color: rgb(45, 45, 45);
+  --seventh-color: rgb(154 153 153);
+  --sixth-color: #272727;
+  --fifth-color: #fff;
+  --forth-color: #d1d1d1;
+  --third-color: rgb(56 56 56);
   --secundary-color:  #1c181d;
-  --primary-color: #b6b6b6;
-}  */
+  --primary-color: #c6c6c6;
+} 
+
+
+
+/* 
+rgb(0, 153, 229) blue
+#FF5733 orange
+*/
 
 .Enter {
   text-align: center;
@@ -67,6 +120,10 @@ html {
   background-color: var(--primary-color);
 }
 
+.cincia hr{
+  border-color: var(--twelf-color);
+}
+
 
 .Enter button {
   min-width: 130px;
@@ -82,8 +139,8 @@ html {
   z-index: 0;
   background: #0051ff1e;
   overflow: hidden;
-  border: 2px solid rgb(21, 177, 255);
-  color: rgb(21, 177, 255);
+  border: 2px solid var(--eleventh-color);
+  color: var(--eleventh-color);
   position: relative;
   z-index: 1;
   font-size: 20px;
@@ -106,7 +163,7 @@ html {
   top: 0;
   width: 0;
   height: 100%;
-  background: rgb(21, 177, 255);
+  background: var(--tirth-color);
 }
 
 
@@ -118,29 +175,29 @@ html {
   padding: 50px;
   padding-top: 25px;
   border-radius: 15px;
-  background: rgb(12, 12, 12);
+  background: var(--third-color);
   margin-bottom: 120px;
   padding-bottom: 75px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
   filter: brightness(65%);
-  transition: 200ms;
+  transition: 300ms;
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
 
 }
 
 .Cutia1:hover {
-  box-shadow: 0 0 40px #ff5833ca;
+  box-shadow: 0 0 40px var(--tenth-color);
   filter: brightness(100%);
   transition: 350ms;
 
 }
 
 .Cutia1:hover h1 {
-  color: #7bbcfe;
+  color: var(--text-first-color);
   text-shadow:
-    0 0 5px #0077ff,
-    0 0 10px #0077ff,
-    0 0 28px #005cc6;
+    0 0 5px var(--text-second-color),
+    0 0 10px var(--text-third-color),
+    0 0 28px var(--text-forth-color);
   transition: 1500ms;
 
 }
@@ -153,7 +210,7 @@ html {
   background: local;
   font-size: 44px;
   margin-bottom: 7px;
-  color: rgb(21, 177, 255);
+  color: var(--text-sixth-color);
 }
 
 
@@ -185,8 +242,8 @@ html {
   z-index: 0;
   background: #0051ff1e;
   overflow: hidden;
-  border: 2px solid rgb(21, 177, 255);
-  color: rgb(21, 177, 255);
+  border: 2px solid var(--eleventh-color);
+  color: var(--eleventh-color);
   position: relative;
   z-index: 1;
   font-size: 20px;
@@ -209,7 +266,7 @@ html {
   top: 0;
   width: 0;
   height: 100%;
-  background: rgb(21, 177, 255);
+  background: var(--tirth-color);
 }
 
 
@@ -234,12 +291,13 @@ html {
   max-width: auto;
   padding: 1px;
   border-radius: 15px;
-  background: rgb(13, 13, 13);
+  background: var(--third-color);
   margin-bottom: -19px;
   padding-bottom: 75px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
   filter: brightness(65%);
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: 300ms;
 }
 
 
@@ -247,7 +305,7 @@ html {
 
 
 .Cutia2:hover {
-  box-shadow: 0 0 40px #ff5833ca;
+  box-shadow: 0 0 40px var(--tenth-color);
   filter: brightness(100%);
 
 }
@@ -257,24 +315,24 @@ html {
 
 .Cutia2 h1 {
   font-family: 'Poppins', sans-serif;
-  color: rgb(21, 177, 255);
+  color: var(--text-sixth-color);
   font-size: 50px;
   margin-top: 30px;
 }
 
 .Cutia2:hover h1 {
-  color: #7bbcfe;
+  color: var(--text-first-color);
   text-shadow:
-    0 0 5px #0077ff,
-    0 0 10px #0077ff,
-    0 0 28px #005cc6;
+    0 0 5px var(--text-second-color),
+    0 0 10px var(--text-third-color),
+    0 0 28px var(--text-forth-color);
   transition: 1500ms;
   font-size: 55px;
 
 }
 
 .Cutia2 p {
-  color: rgb(21, 177, 255);
+  color: var(--eleventh-color);
   text-decoration: italic;
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -286,7 +344,7 @@ html {
 
 .Cutia2 hr {
   border-width: 1px;
-  color: rgb(21, 177, 255);
+  color: var(--eleventh-color);
   margin-left: 90px;
   margin-right: 90px;
   margin-top: 10px;
@@ -381,7 +439,7 @@ input[type=radio] {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
-  background-color: #000000;
+  background-color: var(--nineth-color);
   padding: 13px 35px;
   border: 1.7px solid rgba(0, 153, 229, 0.591);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -582,23 +640,24 @@ input[type=radio] {
   margin-right: 100px;
   max-width: auto;
   padding: 10px;
-  background: rgb(13, 13, 13);
+  background: var(--third-color);
   border-radius: 15px;
   margin-top: 120px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
   filter: brightness(65%);
+  transition: 300ms;
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .Cutia3:hover {
-  box-shadow: 0 0 40px #ff5833ca;
+  box-shadow: 0 0 40px var(--tenth-color);
   filter: brightness(100%);
 }
 
 
 .Cutia3 hr {
   border-width: 1px;
-  color: rgb(21, 177, 255);
+  color: var(--eleventh-color);
   margin-left: 5%;
   margin-right: 10%;
   margin-top: 10px;
@@ -607,7 +666,7 @@ input[type=radio] {
 
 .Cutia3 h1 {
   font-family: 'Poppins', sans-serif;
-  color: rgb(21, 177, 255);
+  color: var(--text-sixth-color);
   font-size: 50px;
   margin-top: 30px;
   margin-left: 5%;
@@ -615,11 +674,11 @@ input[type=radio] {
 }
 
 .Cutia3:hover h1 {
-  color: #7bbcfe;
+  color: var(--text-first-color);
   text-shadow:
-    0 0 5px #0077ff,
-    0 0 10px #0077ff,
-    0 0 28px #005cc6;
+    0 0 5px var(--text-second-color),
+    0 0 10px var(--text-third-color),
+    0 0 28px var(--text-forth-color);
   transition: 1500ms;
   font-size: 55px;
 
@@ -690,7 +749,7 @@ input[type=radio] {
 
 .containerD .cardD .face.face1 {
   position: relative;
-  background: #333;
+  background: var(--forth-color);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -749,7 +808,7 @@ input[type=radio] {
 
 .containerD .cardD .face.face2 {
   position: relative;
-  background: white;
+  background: var(--sixth-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,7 +817,6 @@ input[type=radio] {
   box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
   transform: translateY(-300px);
 }
-
 
 
 .containerD .cardD:hover .face.face2 {
@@ -771,7 +829,7 @@ a {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: var(--fifth-color);
   line-height: 1.4;
   font-family: 'Lato', sans-serif;
 }
@@ -779,7 +837,7 @@ a {
 .containerD .cardD .face.face2 .contentbox a {
   text-decoration: none;
   box-sizing: border-box;
-  color: rgb(0, 0, 0);
+  color: var(--seventh-color);
   outline: 1px dashed #FF5733;
   padding: 10px;
   margin: 15px 0 0;
@@ -811,7 +869,7 @@ a {
   margin-top: 10px;
   padding: 40px 0;
   font: 300 60px 'Poppins', sans-serif;
-  color: rgb(21, 177, 255);
+  color: var(--text-sixth-color);
   letter-spacing: 3px;
 }
 
@@ -972,7 +1030,7 @@ textarea {
 }
 
 .social-media-list li a {
-  color: var(--secundary-color);
+  color: white;
 
 }
 
@@ -1027,29 +1085,39 @@ textarea {
 }
 
 hr {
-  border-color: rgb(21, 177, 255);
+  border-color: var(--eleventh-color);
   margin-top: 5px;
 }
 
 
-
+.mini-hr{
+  background-color: var(--twelf-color);
+  height: 2px;
+}
 
 
 .patra {
-  background-color: #000;
+  background-color: var(--eight-color);
   height: auto;
+}
+
+.cinci-thing{
+  background-color: var(--nineth-color);
+  width: 100%; 
+  height: 25px; 
+  margin-top: -30px;
 }
 
 .cincia {
   margin-top: 140px;
   margin-bottom: 150px;
-  background-color: #000;
+  background-color: var(--nineth-color);
   height: 100px;
 }
 
 .cincia h2 {
   gap: 20px;
-  color: rgb(0, 170, 255);
+  color: var(--blur-color);
   font-size: 6em;
   cursor: pointer;
   user-select: none;
@@ -1067,7 +1135,7 @@ hr {
 
 .cincia h2 span:hover {
   filter: blur(0px);
-  color: rgb(255, 98, 0);
+  color: var(--blur-second-color);
   transition: 0.2s;
 }
 

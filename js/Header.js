@@ -10,6 +10,7 @@ const mainUrl1 = isHome ? '' : '.';
 
 
 document.getElementById('header').innerHTML = `  
+
 <nav class="navbar">
 <div class="content">
   <div class="logo">
@@ -28,7 +29,7 @@ document.getElementById('header').innerHTML = `
     <span class="log-site"><li><a href="${mainUrl1}./pages/Login.html" style="margin-right: 0px;">Logare</a></li></span>
  
     </ul>
-    <img src="./img/Special/BulbOn.png" id="icon">
+    <img  src="./img/Special/BulbOff.png" id="icon">
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
   </div>
@@ -38,6 +39,16 @@ document.getElementById('header').innerHTML = `
 <div class="banner"></div>
 </div>
 `;
+
+var icon = document.getElementById("icon");
+icon.onclick = function(){
+  document.body.classList.toggle("white-theme");
+  if(document.body.classList.contains("white-theme")){
+    icon.src = "./img/Special/BulbOn.png";
+  }else{
+    icon.src = "./img/Special/BulbOff.png"
+  }
+}
 
 
 const body = document.querySelector("body");
