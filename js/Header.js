@@ -29,7 +29,7 @@ document.getElementById('header').innerHTML = `
     <span class="log-site"><li><a href="${mainUrl1}./pages/Login.html" style="margin-right: 0px;">Logare</a></li></span>
  
     </ul>
-    <img  src="./img/Special/BulbOff.png" id="icon">
+    <img  src="./img/Special/BulbOff.png" id="icon-bulb">
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
   </div>
@@ -40,7 +40,7 @@ document.getElementById('header').innerHTML = `
 </div>
 `;
 
-var icon = document.getElementById("icon");
+var icon = document.getElementById("icon-bulb");
 icon.onclick = function () {  
   document.body.classList.toggle("white-theme");
   if (document.body.classList.contains("white-theme")) {
