@@ -41,11 +41,11 @@ document.getElementById('header').innerHTML = `
 `;
 
 var icon = document.getElementById("icon");
-icon.onclick = function(){
+icon.onclick = function () {  
   document.body.classList.toggle("white-theme");
-  if(document.body.classList.contains("white-theme")){
+  if (document.body.classList.contains("white-theme")) {
     icon.src = "./img/Special/BulbOn.png";
-  }else{
+  } else {
     icon.src = "./img/Special/BulbOff.png";
   }
 }
@@ -55,16 +55,16 @@ const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = ()=>{
+menuBtn.onclick = () => {
   navbar.classList.add("show");
   menuBtn.classList.add("hide");
   body.classList.add("disabled");
 }
-cancelBtn.onclick = ()=>{
+cancelBtn.onclick = () => {
   body.classList.remove("disabled");
   navbar.classList.remove("show");
   menuBtn.classList.remove("hide");
 }
-window.onscroll = ()=>{
+window.onscroll = () => {
   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
