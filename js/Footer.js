@@ -16,9 +16,7 @@ document.getElementById('footer1').innerHTML = `
               <p class="lang-element en" style="display: none;">We are a splash of color in a world that tends more and more towards monochrome. Together we can add small splashes of color in offices,
                rooms but even in souls and dreams, along with a small symbol of a pleasant memory or experience.</p>
 
-              <p class="lang-element ru" style="display: none;">Suntem o pată de culoare într-o lume ce tinde tot mai mult spre monocrom. Împreună putem adăuga mici
-              stropi de culoare în birouri, camere dar chiar și în suflete și vise, alături de un mic simbol al unei
-              amintiri sau experiențe plăcute.</p>
+              <p class="lang-element ru" style="display: none;">Text russian</p>
 
             <ul class="socials">
 
@@ -46,19 +44,35 @@ document.getElementById('footer1').innerHTML = `
 
               <ul class="f-menu">
 
-                <li><a href="${mainUrl}#AnchorNoi">DespreNoi</a></li>
+                <li>
+                <a href="${mainUrl}#AnchorNoi" class="lang-element ro">DespreNoi</a>
+                <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">About Us</a>
+                <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">О Hас</a>
+                </li>
 
-                <li><a href="${mainUrl}#AnchorGlarie">Galerie</a></li>
+                <li>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element ro">Galerie</a>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element en" style="display: none;">Gallery</a>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element ru" style="display: none;">Галерея</a>
+                </li>
 
-                <li><a href="${mainUrl}#AnchorProduse">Produse</a></li>
+                <li>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element ro">Produse</a>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element en" style="display: none;">Products</a>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element ru" style="display: none;">Продукты</a>
+                </li>
 
-                <li><a href="${mainUrl}#AnchorContact">Contact</a></li>
-
+                <li>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element ro">Contact</a>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element en" style="display: none;">Contact</a>
+                <a href="${mainUrl}#AnchorGlarie" class="lang-element ru" style="display: none;">Контакт</a>
+                </li>
               </ul>
 
             </div>
 
           </div>
+          
    
 `;
 

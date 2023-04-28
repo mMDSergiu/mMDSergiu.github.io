@@ -54,9 +54,11 @@ document.getElementById('header').innerHTML = `
  
     </ul>
     
+    <ul class="log">
+    <li>
     <div class="language-dropdown">
     <button class="dropdown-btn">
-      RO
+      <span>RO</span>
       <span class="glyphicon glyphicon-chevron-down"></span>
     </button>
     <div class="dropdown-content">
@@ -65,11 +67,15 @@ document.getElementById('header').innerHTML = `
       <a href="#" data-lang="ru">RU</a>
     </div>
   </div>
-  
+  </li>
+
+  <li>
     <img  src="./img/Special/BulbOff.png" id="icon-bulb">
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
   </div>
+  </li>
+</log>
 
 </div>
 </nav>
@@ -107,35 +113,4 @@ window.onscroll = () => {
 }
 
 
-
-// Da doamne 
-
-const dropdownBtn = document.querySelector('.dropdown-btn');
-        const dropdownContent = document.querySelector('.dropdown-content');
-        const elements = document.querySelectorAll('.lang-element');
-        
-        dropdownBtn.addEventListener('click', function() {
-          dropdownContent.classList.toggle('show');
-        });
-        
-        dropdownContent.addEventListener('click', function(event) {
-          if (event.target.tagName === 'A') {
-            const lang = event.target.dataset.lang;
-            elements.forEach(function(el) {
-              if (el.classList.contains(lang)) {
-                el.style.display = 'block';
-              } else {
-                el.style.display = 'none';
-              }
-            });
-            dropdownBtn.textContent = event.target.textContent;
-            dropdownContent.classList.remove('show');
-            dropdownContent.querySelectorAll('a').forEach(function(link) {
-              link.classList.remove('active');
-              if (link.dataset.lang === lang) {
-                link.classList.add('active');
-              }
-            });
-          }
-        });
         

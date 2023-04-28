@@ -64,15 +64,14 @@
   list-style: none;
 }
 .log li a{
-  color: #fff;
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .log li a:hover{
-  color:  rgb(21, 177, 255);
+  color:  rgb(0, 153, 229);
 }
 
 .log-site li a:hover{
