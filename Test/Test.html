@@ -1,52 +1,840 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="Test.css">
-</head>
-<body>
-  <div id="language-buttons">
-    <button id="ro-btn" class="language-btn active" data-lang="ro">Română</button>
-    <button id="en-btn" class="language-btn" data-lang="en">English</button>
-    <button id="ru-btn" class="language-btn" data-lang="ru">Русский</button>
-  </div>
-  <h1 class="lang-element ro"><span style="color: red;">Bun</span> venit!</h1>
-<h1 class="lang-element en" style="display: none;"><span style="color: red;">Wel</span>come!</h1>
-<h1 class="lang-element ru" style="display: none;"><span style="color: red;">Добро</span> пожаловать!</h1>
-
-<h2 class="lang-element ro">Acesta este site-ul meu.</h2>
-<h2 class="lang-element en" style="display: none;">This is my website.</h2>
-<h2 class="lang-element ru" style="display: none;">Это мой сайт.</h2>
-
-<p class="lang-element ro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p class="lang-element en" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p class="lang-element ru" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+  <title>NeonLux | Acasă</title>
+  <link rel="shortcut icon" href="./img/Pozele Home/Logo/LogoFinal cerc.png">
+  <link rel="stylesheet" href="./css/Stiluri.css">
+  <link rel="stylesheet" href="./css/BG.css">
+  <link rel="stylesheet" href="./css/Header.css">
+  <link rel="stylesheet" href="./css/Footer.css">
+  <link rel="stylesheet" href="./css/Common.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   
-<script>
-const languageBtns = document.querySelectorAll('.language-btn');
-const elements = document.querySelectorAll('.lang-element');
 
-languageBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const lang = btn.dataset.lang;
-    elements.forEach(el => {
-      if (el.classList.contains(lang)) {
-        el.style.display = 'block';
-      } else {
-        el.style.display = 'none';
-      }
-    });
-  });
-});
+  <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+  
 
 
-</script>
+  <meta name="description" content="NeonLux este o companie în curs de dezvoltare ce se ocupă cu crearea de lămpi led cu scopul de a face orice cameră
+   să arate fabulos! Considerăm produsele noastre ca fiind accesori minunate pentru camera dumneavoastră cât și cadouri minunate pentru oricine și orice ocazie!">
+
+  <meta name="keywords" content="neon,lux,neonlux,neonlux_shop,lampi,personalizat,lampi personalizate,cadou,cadou perfect,cadou pentru iubita,
+    cadou pentru iubitu,cadou pentru,culoare,culori,lumini,luminițe,lampi de colț,rapid,superb,livrare,moldova">
+
+
+</head>
+
+<body>
+
+  <div id="preloader">
+  </div>
+
+
+
+  <div class="tot">
+    
+    <nav id="header" data-page="home" class="meniu-container">
+      
+    </nav> 
+
+    
+ 
+    <div class="language-dropdown">
+      <button class="dropdown-btn">
+        RO
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" data-lang="ro">RO</a>
+        <a href="#" data-lang="en">ENG</a>
+        <a href="#" data-lang="ru">RU</a>
+      </div>
+    </div>
+ 
+   
+    <br>
+    <div class="Enter" >
+      
+      <img src="./img/Pozele Home/Logo/Logo transparent.png" style="width: 100%; width: 200px; padding-top: 8%; z-index: 2;" id="AnchorTop" >
+
+<h3 class="lang-element ro">Bun venit la <span style="color: rgb(0, 153, 229); font-family: 'Poppins', sans-serif;">Neon</span><span style="color: #FF5733; font-family: 'Poppins', sans-serif;">Lux</span>!</h3>
+<h3 class="lang-element en" style="display: none;">Welcome to <span style="color: rgb(0, 153, 229); font-family: 'Poppins', sans-serif;">Neon</span><span style="color: #FF5733; font-family: 'Poppins', sans-serif;">Lux</span>!</h3>
+<h3 class="lang-element ru" style="display: none;">Добро пожаловать в <span style="color: rgb(0, 153, 229); font-family: 'Poppins', sans-serif;">Neon</span><span style="color: #FF5733; font-family: 'Poppins', sans-serif;">Lux</span>!</h3>
+
+<p class="lang-element ro">Suntem o companie în plină dezvoltare, creatoare de produse în stil neon, personalizate și de calitate înaltă!<br>
+  Produsele noastre sunt create pentru a trezi amintiri plăcute și a schimnba atmosfera oricărei camere în care s-ar afla!<br>
+  Din gama noastră de produse fac parte: <span style="font-style: italic; font-weight: bold; color: rgb(0, 153, 229);">Lămpi Mici</span>, <span style="font-style: italic; font-weight: bold; color: #FF5733;">Lămpi Medii</span> și <span style="font-style: italic;font-weight: bold; font-weight: bold; color: rgb(0, 153, 229)">Leduri de Colț</span>.<br>
+  Lămpile pot fi personalizate după bunul plac!
+  
+  <br><br>
+  <button onclick="window.location.href='#AnchorNoi';">Continuă</button>
+</p>
+
+<p class="lang-element en" style="display: none;">We are a growing company creating neon style, custom and high quality products!<br>
+  Our products are created to evoke pleasant memories and change the atmosphere of any room they are in!<br>
+  Our product range includes: <span style="font-style: italic; font-weight: bold; color: rgb(0, 153, 229);">Small Lamps</span>, <span style="font-style: italic; font-weight: bold; color: #FF5733;">Medium Lamps</span> and <span style="font-style: italic;font-weight: bold; font-weight: bold; color: rgb(0, 153, 229)">Corner Lights</span>.<br>
+  The lamps can be customized to your liking!
+  
+  <br><br>
+  <button onclick="window.location.href='#AnchorNoi';">Continue</button>
+</p>
+
+<p class="lang-element ru" style="display: none;">Мы растущая компания, создающая неоновый стиль, нестандартную и высококачественную продукцию!<br>
+  Наши продукты созданы для того, чтобы вызывать приятные воспоминания и менять атмосферу любой комнаты, в которой они находятся!<br>
+  Ассортимент нашей продукции включает в себя: <span style="font-style: italic; font-weight: bold; color: rgb(0, 153, 229);">Маленькие Лампы</span>, <span style="font-style: italic; font-weight: bold; color: #FF5733;">Средние Лампы</span> и <span style="font-style: italic;font-weight: bold; font-weight: bold; color: rgb(0, 153, 229)">Угловые Светильники</span>.<br>
+  Lămpile pot fi personalizate după bunul plac!
+  
+  <br><br>
+  <button onclick="window.location.href='#AnchorNoi';">Продолжать</button>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+
+
+    </div>
+
+    
+    <section class="prima">
+
+      
+      <div class="Cutia1">
+        <h1 id="AnchorNoi" class="lang-element ro">∘ Cine suntem noi?</h1>
+         <h1 id="AnchorNoi" class="lang-element en" style="display: none;">∘ Who are we?</h1>
+          <h1 id="AnchorNoi" class="lang-element ru" rustyle="display: none;">∘ Кто мы?</h1>
+
+
+
+
+        <p style="margin-bottom: 30px;" class="lang-element ro">Suntem o companie recent fondată dar cu idei și ambiții mărețe. Producem și
+          comercializăm suvenire personalizate precum lămpile 3D
+          sau leduri de decor. Considerăm produsele
+          noastre un cadou unic ce poate fi oferit persoanelor dragi. Efectuăm livrări pe tot teritoriul țării prin
+          curier.</p>
+
+          <p style="margin-bottom: 30px;" class="lang-element en" style="display: none;">We are a recently founded company but with great ideas and
+             ambitions. We produce and sell personalized souvenirs such as 3D
+             lamps or decorative LEDs. We consider our products
+             a unique gift that can be given to loved ones. We make deliveries throughout the country 
+             by courier.</p>
+              
+
+
+            <p style="margin-bottom: 30px;" class="lang-element ru" style="display: none;">Мы недавно основанная компания, но с большими идеями и амбициями. Мы
+               производим и продаем персонализированные сувениры, такие как 3D-лампы или декоративные светодиоды. 
+               Мы считаем нашу продукцию уникальным 
+               подарком, который можно подарить близким. Осуществляем доставку по всей стране курьером.</p>
+
+
+
+
+        <h1 class="lang-element ro">∘ Cu ce ne ocupăm noi?</h1>
+         <h1 class="lang-element en" style="display: none;">∘ What do we do?</h1>
+          <h1 class="lang-element ru" style="display: none;">∘ Что мы делаем?</h1>
+
+
+
+
+        <p style="margin-bottom: 30px;"  class="lang-element ro">Noi înghețăm amintiri în lămpile noastre colorate și personalizate.
+          Producem și comercializăm lămpi și leduri de diferite dimensiuni la diferite prețuri.
+          Putem aduce orice ideie la viața într-un mod fermecător!
+        </p>
+
+         <p style="margin-bottom: 30px;"  class="lang-element en" style="display: none;">We freeze memories in our colorful and personalized
+           lamps. We manufacture and sell lamps and LEDs of various sizes at various prices.
+            We can bring any idea to life in a charming way!
+         </p>
+
+          <p style="margin-bottom: 30px;"  class="lang-element ru" style="display: none;">Мы замораживаем воспоминания в наших ярких и персонализированных
+             лампах. Мы производим и продаем лампы и светодиоды различных размеров по разным ценам. Мы можем воплотить любую 
+             идею в жизнь в очаровательной форме!
+         </p>
+
+
+        <h1 class="lang-element ro">∘ Despre produse :</h1>
+        <h1 class="lang-element en" style="display: none;">∘ About products :</h1>
+        <h1 class="lang-element ru" style="display: none;">∘ О продуктах :</h1>
+
+
+
+
+        <p class="lang-element ro">Produsele noastre sunt de înaltă calitatea fabricate chiar de noi. Avem o gamă largă de clienți mulțumiți!
+          Livrăm în orice colț al țării la suma de 48MDL. Produsele vin cu instrucțiuni de utilizare, blocuri de
+          alimentare
+          și sunt bine sigilate în cutii pentru a evita deteriorarea și a ajunge la dumneavoastră în cea mai bună stare
+          posibilă iar timpul de realizare este scurt!
+          Dacă doriți să aflați mai multe despre produse apăsți aici:
+          <br>
+          <br>
+        </p>
+
+         <p class="lang-element en" style="display: none;">Our products are of high quality manufactured by us. We have a wide range 
+          of satisfied customers! We deliver to any corner of the country for the amount of 48 MDL. The products come with instructions
+           for use, power blocks and are well sealed in boxes to avoid damage and reach you in the best 
+          possible condition and the turnaround time is short! If you want to know more about the products click here:
+           <br>
+           <br>
+         </p>
+
+          <p class="lang-element ru" style="display: none;">Наша продукция высокого качества, произведенная нами. У нас большой круг довольных клиентов! 
+            Доставляем в любой уголок страны на сумму 48 лей. Продукты поставляются с инструкциями по использованию, силовыми блоками и хорошо запечатаны 
+            в коробках, чтобы избежать повреждений и 
+            доставить вас в наилучшем состоянии, а время обработки короткое! Если вы хотите узнать больше о продуктах, нажмите здесь:
+            <br>
+            <br>
+          </p>
+
+
+          <button class="button-product lang-element ro" onclick="window.location.href='#AnchorProduse';">Produse</button>
+          <button class="button-product lang-element en" style="display: none;" onclick="window.location.href='#AnchorProduse';">Products</button>
+          <button class="button-product lang-element ru" style="display: none;" onclick="window.location.href='#AnchorProduse';">Продукты</button>
+     
+
+
+
+      </div>
+
+
+
+
+
+    </section>
+    <br id="AnchorGlarie">
+ 
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+
+
+    <section class="doua">
+      <div class="Cutia2">
+
+        <h1 align="center" class="lang-element ro">Galerie</h1>
+        <h1 align="center" class="lang-element en" style="display: none;">Gallery</h1>
+        <h1 align="center" class="lang-element ru" style="display: none;">Галерея</h1>
+
+        <hr>
+<p class="lang-element ro">Totul de pe acest WebSite este interactiv!
+  Click pe imagini pentru a interacționa cu ele!
+</p>
+
+<p class="lang-element en" style="display: none;">Everything on this WebSite is interactive! 
+  Click on the images to interact with them!
+</p>
+
+<p class="lang-element ru" style="display: none;">Все на этом веб-сайте интерактивно! 
+  Нажмите на изображения, чтобы взаимодействовать с ними!
+</p>
+
+        <div class="mergi" align="center">
+          <div class="container1">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+
+              <label class="card" for="item-1" id="song-1">
+                <img class="img1" src="./img/Pozele Home/Home Standard/Standard 1r.jpg">
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img class="img1" src="./img/Pozele Home/Home Standard/Standard 3.jpg">
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img class="img1" src="./img/Pozele Home/Home Standard/Standard 1gggg.jpg">
+              </label>
+
+            </div>
+
+
+
+
+
+            <button onclick="window.location.href='#AnchorProduse'" class="photo-button"><a><i class="far fa-lightbulb" style="color: rgb(0, 195, 255);font-size:20px; margin-right: 10px;"></i>Lămpi Standard</a></button>
+
+          </div>
+        </div>
+
+        <hr>
+  
+
+        <div class="mergi11" align="center">
+          <div class="container11">
+            <input type="radio" name="slider11" id="item-11" checked>
+            <input type="radio" name="slider11" id="item-22">
+            <input type="radio" name="slider11" id="item-33">
+            <div class="cards11">
+
+              <label class="card11" for="item-11" id="song-11">
+                <img class="img11" src="./img/Pozele Home/Home Mici/Mici 3.jpg">
+              </label>
+              <label class="card11" for="item-22" id="song-22">
+                <img class="img11" src="./img/Pozele Home/Home Mici/Mici 4.jpg">
+              </label>
+              <label class="card11" for="item-33" id="song-33">
+                <img class="img11" src="./img/Pozele Home/Home Mici/Mici 4ll.jpg">
+              </label>
+
+            </div>
+            <button onclick="window.location.href='#AnchorProduse'" class="photo-button"><a><i class="far fa-lightbulb" style="color: rgb(0, 195, 255);font-size:20px; margin-right: 10px;"></i>Lămpi Mici</a></button>
+            </div>
+          </div>
+        
+        <hr>
+      
+
+        <div class="mergi111" align="center">
+          <div class="container111">
+            <input type="radio" name="slider111" id="item-111" checked>
+            <input type="radio" name="slider111" id="item-222">
+            <input type="radio" name="slider111" id="item-333">
+            <div class="cards111">
+
+              <label class="card111" for="item-111" id="song-111">
+                <img class="img111" src="./img/Pozele Home/Home Colt/Colt1.jpg">
+              </label>
+              <label class="card111" for="item-222" id="song-222">
+                <img class="img111" src="./img/Pozele Home/Home Colt/Colt2.jpg">
+              </label>
+              <label class="card111" for="item-333" id="song-333">
+                <img class="img111" src="./img/Pozele Home/Home Colt/Colt.jpg">
+              </label>
+
+            </div>
+            <button onclick="window.location.href='#AnchorProduse'" class="photo-button"><a><i class="far fa-lightbulb" style="color: rgb(0, 195, 255);font-size:20px; margin-right: 10px;"></i>Lămpi de Colț</a></button>
+            </div>
+          </div>
+        
+        <hr>
+
+        <br><br>
+      </div>
+      <br style="width: 0px;">
+      <br id="AnchorProduse">
+
+    </section>
+
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+
+    <section class="treia">
+      <div class="Cutia3">
+
+        <div class="totcutia3">
+
+
+
+          <div class="titluproduse">
+            <h1 style="text-align: center;padding-left: 5%;">Produse</h1>
+          </div>
+
+          <hr style="margin-top: 50px; margin-bottom: 100px;">
+
+          <div class="main">
+            <div>
+                <div class="containerD">
+                    <div class="cardD">
+                      <div class="face face1" align="center">
+                        <div class="contentbox">
+                          
+                          <h3>Lămpi Standard</h3>
+                        </div>
+                      </div>
+                      <div class="face face2">
+                        <div class="contentbox">
+                          <p style="margin: 0;"> Lămpile Standard, sunt produse handmade cu 16 culori și 366 de regimuri de iluminare diferite,
+                            fiind controlate prin telecomandă.
+                            Alimentarea se face prin USB la orice tip de dispozitiv, sau prin adaptorul inclus în cutie.
+                            Orice desen cu mărimea de 15x20cm costă 640MDL, iar pentru poze se adaugă suplimentar 200MDL.
+                            Prețul livrării: 48MDL.</p>
+                          <a href="./pages/Standard.html"  rel="noopener noreferrer"
+                            type="button" style="border-radius: 5px;">Mai Mult</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="containerD">
+                    <div class="cardD">
+                      <div class="face face1">
+                        <div class="contentbox">
+        
+                          <h3>Lămpi Mici</h3>
+                        </div>
+                      </div>
+                      <div class="face face2">
+                        <div class="contentbox">
+                          <p>Lămpile Mici, sunt produse handmade ce vin în una dintre cele 5 culori (Roșu, Verde, Galben,
+                            Albastru, Alb) aleasă de dumneavoastră.
+                            Alimentarea se face prin USB la orice dispozitiv compatibil, sau prin adaptor (Adaptorul nu este
+                            inclus).
+                            Orice desen poate fi implemenatat pe o suprafață de 8x12cm la prețul de 240MDL.
+                            Prețul livrării: 48MDL.</p>
+                          <a href="./pages/Mici.html"  rel="noopener noreferrer" type="button2"
+                            style="border-radius: 5px;">Mai Mult</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="containerD">
+                    <div class="cardD">
+                      <div class="face face1">
+                        <div class="contentbox">
+        
+                          <h3>Lămpi de Colț</h3>
+                        </div>
+                      </div>
+                      <div class="face face2">
+                        <div class="contentbox">
+                          <p>Lampa de Colț, oferă o lumină puternică și creiază o atmosferă plăcută în orice încăpere s-ar afla.
+                            Lampa dispune de 16 culori și 366 de regimuri de iluminare ce sunt controlate prin telecomandă.
+                            Este construită din aluminiu de culoare negru mat.
+                            Prețurile sunt: 60cm-1350MDL, 100cm-1500MDL, 150cm-1750MDL.
+                            Prețul livrării: 48MDL.</p>
+                          <a href="./pages/Colt.html"  rel="noopener noreferrer" type="button2"
+                            style="border-radius: 5px;">Mai Mult</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+          <hr style="margin-bottom: 100px;">
+
+        </div>
+      </div>
+
+
+    </section>
+  
+
+
+
+      <section class="cincia" align="center">
+        <hr style="margin-top: 150px;">
+        <div class="cinci">
+          <h2 id="AnchorContact" style="padding-bottom: 10px ;">
+            <span><i></i>N</span>
+            <span><i></i>E</span>
+            <span><i></i>O</span>
+            <span><i></i>N</span>
+
+          </h2>
+          <div class="cinci-thing"> </div>
+        </div>
+        <hr  style="margin-top: -2px;">
+      </section>
+
+      <section class="patra">
+<div class="mini-hr"></div>
+        <section id="contact">
+
+          <h1 class="section-header">Contact</h1>
+
+          <div class="contact-wrapper">
+
+
+
+            <form id="contact-form" class="form-horizontal" role="form">
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="Nume" name="name" size="60px" value=""
+                    required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email" size="60px"
+                    value="" required>
+                </div>
+              </div>
+
+              <textarea class="form-control2" rows="10" cols="60" placeholder="Mesajul" name="message"
+                required></textarea>
+              <br>
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                
+                  <i class="fa fa-paper-plane" style="margin-top: 5px; margin-left: 10px;"></i><span class="send-text" style="margin-left: -10px;">Trimite</span>
+                
+                </div>
+
+              </button>
+
+            </form>
+
+
+
+            <div class="direct-contact-container">
+
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Orașul
+                      Chișinău</span></i></li>
+
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                        href="tel:+373-6007-1871" title="Apelați">(373) 600-71-871 </a></span></i></li>
+
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail">
+                  <a href="mailto:neonlux.manager@gmail.com" title="Trimite-ne un mail">neonlux.manager@gmail.com</a></span></i></li>
+
+              </ul>
+
+              <hr style="border-color: #FF5733;">
+              <ul class="social-media-list">
+                <li><a href="https://www.instagram.com/neonlux_shop/" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" style="font-size: 25px;" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/neonlux.shop" target="_blank" class="contact-icon">
+                    <i class="fa fa-facebook" style="font-size: 25px;" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://web.telegram.org/z/#5908971290" target="_blank" class="contact-icon">
+                    <i class="fa fa-telegram" style="font-size: 25px;" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="mailto:neonlux.manager@gmail.com" target="_blank" class="contact-icon">
+                    <i class="fa fa-envelope" style="font-size: 25px;" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+              <hr style="border-color: #FF5733;">
+
+              <div class="copyright">&copy; Toate drepturile sunt deținute de autor</div>
+
+            </div>
+
+          </div>
+
+
+        </section>
+
+      </section>
+
+      <!-- Aici este prcolu cu limbele -->
+      <script>const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        const elements = document.querySelectorAll('.lang-element');
+        
+        dropdownBtn.addEventListener('click', function() {
+          dropdownContent.classList.toggle('show');
+        });
+        
+        dropdownContent.addEventListener('click', function(event) {
+          if (event.target.tagName === 'A') {
+            const lang = event.target.dataset.lang;
+            elements.forEach(function(el) {
+              if (el.classList.contains(lang)) {
+                el.style.display = 'block';
+              } else {
+                el.style.display = 'none';
+              }
+            });
+            dropdownBtn.textContent = event.target.textContent;
+            dropdownContent.classList.remove('show');
+            dropdownContent.querySelectorAll('a').forEach(function(link) {
+              link.classList.remove('active');
+              if (link.dataset.lang === lang) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+        
+    </script>      
+        
+
+
+<section class="footer">
+  <footer id="footer1" data-page="home1">
+
+  </footer>
+</section>
+
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+
 
 </body>
 
+<script src="./js/LightMode.js"></script>
+<script src="./js/Common.js"></script>
+<script src="./js/Header.js"></script>
+<script src="./js/Footer.js"></script>
+<script src="./js/Scrollbar.js"></script>
 </html>

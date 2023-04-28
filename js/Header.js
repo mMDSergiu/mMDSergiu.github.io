@@ -20,15 +20,52 @@ document.getElementById('header').innerHTML = `
     <div class="icon cancel-btn">
       <i class="fas fa-times"></i>
     </div>
-    <li><a href="${mainUrl}#AnchorNoi">Despre Noi</a></li>
-    <li><a href="${mainUrl}#AnchorGlarie">Galerie</a></li>
-    <li><a href="${mainUrl}#AnchorProduse">Produse</a></li>
-    <li><a href="${mainUrl}#AnchorContact">Contact</a></li>
+    <li>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Despre Noi</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">About Us</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">О Hас</a>
+    </li>
+    <li>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Galerie</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">Gallery</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">Галерея</a>
+    </li>
+    <li>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Produse</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">Products</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">Продукты</a>
+    </li>
+    <li>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Contact</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">Contact</a>
+    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">Контакт</a>
+    </li>
 
-    <span class="log-site"><li><a href="${mainUrl1}./pages/Register.html">Creare Cont</a></li></span>
-    <span class="log-site"><li><a href="${mainUrl1}./pages/Login.html" style="margin-right: 0px;">Logare</a></li></span>
+    <span class="log-site"><li>
+    <a href="${mainUrl1}./pages/Register.html" class="lang-element ro">Creare Cont</a>
+    <a href="${mainUrl1}./pages/Register.html" class="lang-element en" style="display: none;">Create Account</a>
+    <a href="${mainUrl1}./pages/Register.html" class="lang-element ru" style="display: none;">Зарегистрироваться</a>
+    </li></span>
+    <span class="log-site"><li>
+    <a href="${mainUrl1}./pages/Login.html" class="lang-element ro" style="margin-right: 0px;">Logare</a>
+    <a href="${mainUrl1}./pages/Login.html" class="lang-element en" style="margin-right: 0px; display: none;">Log In</a>
+    <a href="${mainUrl1}./pages/Login.html" class="lang-element ru" style="margin-right: 0px; display: none;">Вход</a>
+    </li></span>
  
     </ul>
+    
+    <div class="language-dropdown">
+    <button class="dropdown-btn">
+      RO
+      <span class="glyphicon glyphicon-chevron-down"></span>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" data-lang="ro">RO</a>
+      <a href="#" data-lang="en">ENG</a>
+      <a href="#" data-lang="ru">RU</a>
+    </div>
+  </div>
+  
     <img  src="./img/Special/BulbOff.png" id="icon-bulb">
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
@@ -68,3 +105,37 @@ cancelBtn.onclick = () => {
 window.onscroll = () => {
   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
+
+
+
+// Da doamne 
+
+const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        const elements = document.querySelectorAll('.lang-element');
+        
+        dropdownBtn.addEventListener('click', function() {
+          dropdownContent.classList.toggle('show');
+        });
+        
+        dropdownContent.addEventListener('click', function(event) {
+          if (event.target.tagName === 'A') {
+            const lang = event.target.dataset.lang;
+            elements.forEach(function(el) {
+              if (el.classList.contains(lang)) {
+                el.style.display = 'block';
+              } else {
+                el.style.display = 'none';
+              }
+            });
+            dropdownBtn.textContent = event.target.textContent;
+            dropdownContent.classList.remove('show');
+            dropdownContent.querySelectorAll('a').forEach(function(link) {
+              link.classList.remove('active');
+              if (link.dataset.lang === lang) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+        

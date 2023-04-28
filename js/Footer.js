@@ -9,7 +9,14 @@ document.getElementById('footer1').innerHTML = `
 
             <h3>Neon Lux</h3>
 
-            <p>Suntem o pată de culoare într-o lume ce tinde tot mai mult spre monocrom. Împreună putem adăuga mici
+            <p class="lang-element ro">Suntem o pată de culoare într-o lume ce tinde tot mai mult spre monocrom. Împreună putem adăuga mici
+              stropi de culoare în birouri, camere dar chiar și în suflete și vise, alături de un mic simbol al unei
+              amintiri sau experiențe plăcute.</p>
+
+              <p class="lang-element en" style="display: none;">We are a splash of color in a world that tends more and more towards monochrome. Together we can add small splashes of color in offices,
+               rooms but even in souls and dreams, along with a small symbol of a pleasant memory or experience.</p>
+
+              <p class="lang-element ru" style="display: none;">Suntem o pată de culoare într-o lume ce tinde tot mai mult spre monocrom. Împreună putem adăuga mici
               stropi de culoare în birouri, camere dar chiar și în suflete și vise, alături de un mic simbol al unei
               amintiri sau experiențe plăcute.</p>
 
