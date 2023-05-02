@@ -28,8 +28,70 @@
 .en { display: none; }
 .ru { display: none; }
 
+@font-face {
+  font-family: Shadow;
+  src: url(../fonts/shadow/BlockShadow-Regular.ttf);
+}
+
+:root {
+  --primary-color: #1c181d;
+  --secundary-color: #fff;
+  --third-color: rgb(12, 12, 12);
+  --forth-color: #333;
+  --fifth-color: #333;
+  --sixth-color: white;
+  --seventh-color: #0077ff;
+  --eight-color: #000;
+  --nineth-color: #000;
+  --tenth-color: #ff5833ca;
+
+  --eleventh-color: rgb(0, 153, 229);
+  --twelf-color:#FF5733;
+  --tirth-color:rgb(29, 161, 226);
+
+  --blur-color: rgb(0, 170, 255);
+  --blur-second-color: rgb(255, 98, 0);
+
+  --text-forth-color:#005cc6;
+  --text-third-color:#0077ff;
+  --text-second-color:#0077ff; 
+  --text-first-color:#7bbcfe;
+  --text-sixth-color:rgb(21, 177, 255);
+}
 
 
+.white-theme{
+  --text-sixth-color: #FF5733;
+  --text-forth-color: #fb380c;
+  --text-third-color: #f95e3c;
+  --text-second-color: #fc896f; 
+  --text-first-color: #fda490;
+
+  --twelf-color: rgb(0, 153, 229);
+  --eleventh-color: #FF5733;
+  --tirth-color: #fa6c4c;
+
+  --blur-color: rgb(255, 98, 0);
+  --blur-second-color:rgb(0, 170, 255);
+
+  --tenth-color: rgb(0, 153, 229); 
+  --nineth-color: rgb(24, 24, 24);
+  --eight-color: rgb(45, 45, 45);
+  --seventh-color: rgb(154 153 153);
+  --sixth-color: #272727;
+  --fifth-color: #fff;
+  --forth-color: #d1d1d1;
+  --third-color: rgb(56 56 56);
+  --secundary-color:  #1c181d;
+  --primary-color: #c6c6c6;
+}
+
+
+
+#icon-bulb{
+  width: 30px;
+  cursor: pointer;
+}
 
 .language-dropdown {
   position: relative;

@@ -14,7 +14,7 @@ document.getElementById('header').innerHTML = `
 <nav class="navbar">
 <div class="content">
   <div class="logo">
-    <a href="${mainUrl}#AnchorTop">NeonLux</a>
+    <a href="${mainUrl}#AnchorTop"><span style="font-family: 'Shadow'; font-size: 40px;">NE<span class="fa fa-lightbulb-o" style="font-size:25px; margin-left: 5px; margin-right: 5px"></span>N</span><span style="font-family: 'Rubik'; font-size: 20px; margin-left: 8px;">Lux</span></a>
   </div>
   <ul class="menu-list">
     <div class="icon cancel-btn">
@@ -58,7 +58,7 @@ document.getElementById('header').innerHTML = `
     <li>
     <div class="language-dropdown">
     <button class="dropdown-btn">
-      <span>RO</span>
+      <span>RO   <i class="fa fa-chevron-down style="font-size:10px;"></i></span>
       <span class="glyphicon glyphicon-chevron-down"></span>
     </button>
     <div class="dropdown-content">
@@ -70,12 +70,12 @@ document.getElementById('header').innerHTML = `
   </li>
 
   <li>
-    <img  src="./img/Special/BulbOff.png" id="icon-bulb">
+    <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb">
   <div class="icon menu-btn">
     <i class="fas fa-bars"></i>
   </div>
   </li>
-</log>
+</ul>
 
 </div>
 </nav>
@@ -87,9 +87,9 @@ var icon = document.getElementById("icon-bulb");
 icon.onclick = function () {  
   document.body.classList.toggle("white-theme");
   if (document.body.classList.contains("white-theme")) {
-    icon.src = "./img/Special/BulbOn.png";
+    icon.src = './img/Special/BulbOn.png';
   } else {
-    icon.src = "./img/Special/BulbOff.png";
+    icon.src = './img/Special/BulbOff.png';
   }
 }
 //  ASdasda

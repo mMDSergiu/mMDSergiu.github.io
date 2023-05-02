@@ -7,6 +7,7 @@
 }
 
 
+
 :root {
   --primary-color: #1c181d;
   --secundary-color: #fff;
@@ -32,10 +33,7 @@
   --text-first-color:#7bbcfe;
   --text-sixth-color:rgb(21, 177, 255);
 }
-#icon-bulb{
-  width: 30px;
-  cursor: pointer;
-}
+
 
 .white-theme{
   --text-sixth-color: #FF5733;
@@ -92,13 +90,13 @@ rgb(0, 153, 229) blue
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  filter: brightness(50%);
+  filter: brightness(30%);
   z-index: -1;
 }
 
 .Enter h3 {
   font-family: 'Poppins', sans-serif;
-  padding-top: 1%;
+  padding-top: 175px;
   font-size: 45px;
   position: relative;
 }
@@ -144,6 +142,7 @@ html {
   position: relative;
   z-index: 1;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 .Enter button:hover {
@@ -171,13 +170,13 @@ html {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 80px;
-  max-width: auto;
   padding: 50px;
   padding-top: 25px;
-  border-radius: 15px;
-  background: var(--third-color);
   margin-bottom: 120px;
   padding-bottom: 75px;
+  max-width: auto;
+  border-radius: 15px;
+  background: var(--third-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
   filter: brightness(65%);
   transition: 300ms;
@@ -288,12 +287,12 @@ html {
   margin-left: 100px;
   margin-right: 100px;
   height: 2506px;
-  max-width: auto;
-  padding: 1px;
-  border-radius: 15px;
-  background: var(--third-color);
   margin-bottom: -19px;
   padding-bottom: 75px;
+  padding: 1px;
+  max-width: auto;
+  border-radius: 15px;
+  background: var(--third-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
   filter: brightness(65%);
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;

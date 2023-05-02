@@ -62,6 +62,7 @@
 }
 .log li{
   list-style: none;
+  margin-right: 10px;
 }
 .log li a{
   color: #000000;

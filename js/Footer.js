@@ -16,7 +16,8 @@ document.getElementById('footer1').innerHTML = `
               <p class="lang-element en" style="display: none;">We are a splash of color in a world that tends more and more towards monochrome. Together we can add small splashes of color in offices,
                rooms but even in souls and dreams, along with a small symbol of a pleasant memory or experience.</p>
 
-              <p class="lang-element ru" style="display: none;">Text russian</p>
+              <p class="lang-element ru" style="display: none;">Мы — всплеск цвета в мире, который все больше и больше стремится к монохромности. Вместе мы можем добавить небольшие всплески цвета в офисы,
+               комнаты и даже в души и мечты вместе с небольшим символом приятного воспоминания или опыта.</p>
 
             <ul class="socials">
 
