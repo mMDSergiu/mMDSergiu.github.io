@@ -26,19 +26,19 @@ document.getElementById('header').innerHTML = `
     <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">О Hас</a>
     </li>
     <li>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Galerie</a>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">Gallery</a>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">Галерея</a>
+    <a href="${mainUrl}#AnchorGlarie" class="lang-element ro">Galerie</a>
+    <a href="${mainUrl}#AnchorGlarie" class="lang-element en" style="display: none;">Gallery</a>
+    <a href="${mainUrl}#AnchorGlarie" class="lang-element ru" style="display: none;">Галерея</a>
     </li>
     <li>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Produse</a>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">Products</a>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">Продукты</a>
+    <a href="${mainUrl}#AnchorProduse" class="lang-element ro">Produse</a>
+    <a href="${mainUrl}#AnchorProduse" class="lang-element en" style="display: none;">Products</a>
+    <a href="${mainUrl}#AnchorProduse" class="lang-element ru" style="display: none;">Продукты</a>
     </li>
     <li>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element ro">Contact</a>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element en" style="display: none;">Contact</a>
-    <a href="${mainUrl}#AnchorNoi" class="lang-element ru" style="display: none;">Контакт</a>
+    <a href="${mainUrl}#AnchorContact" class="lang-element ro">Contact</a>
+    <a href="${mainUrl}#AnchorContact" class="lang-element en" style="display: none;">Contact</a>
+    <a href="${mainUrl}#AnchorContact" class="lang-element ru" style="display: none;">Контакт</a>
     </li>
 
     <span class="log-site"><li>
@@ -87,9 +87,9 @@ var icon = document.getElementById("icon-bulb");
 icon.onclick = function () {  
   document.body.classList.toggle("white-theme");
   if (document.body.classList.contains("white-theme")) {
-    icon.src = './img/Special/BulbOn.png';
+    icon.src = `${mainUrl1}./img/Special/BulbOn.png`;
   } else {
-    icon.src = './img/Special/BulbOff.png';
+    icon.src = `${mainUrl1}./img/Special/BulbOff.png`;
   }
 }
 //  ASdasda

@@ -10,8 +10,7 @@
   body {
     display: grid;
     grid-template-rows: 1fr;
-    font-family: "Raleway", sans-serif;
-    background-color: #1c181d;
+    background-color: var(--primary-color);
     }
     
     h3 {
@@ -84,6 +83,7 @@
     color: #4c4c4c;
     font-size: 1.5em;
     font-weight: 900;
+    font-family: 'Poppins';
     }
     .title span {
     font-size: 0.7em;
@@ -179,10 +179,7 @@
     margin-right: 20%;
     transition: 100ms;
     border-radius: 10px;
-    box-shadow: 0 0 10px 1px rgba(220, 20, 220, 0.703);
-    -moz-box-shadow: 0 0 10px 1px rgb(220, 20, 220, 0.703);
-    -webkit-box-shadow: 0 0 10px 1px rgb(220, 20, 220, 0.703);
-    -o-box-shadow: 0 0 10px 1px rgb(220, 20, 220, 0.703);
+    box-shadow: 0px 0px 10px 0px rgba(21, 177, 255, 0.678); 
 }
 
 ul.slides {
@@ -367,25 +364,45 @@ input:checked + .slide-container .nav label { display: block; }
     padding: 50px;
     padding-top: 10px;
     border-radius: 60px;
-    background: rgb(13, 13, 13);
     margin-bottom: 120px;
     padding-bottom: 75px;
-    box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-    -moz-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-    -webkit-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-    -o-box-shadow: 0 0 20px 5px rgb(20, 174, 220);
-    filter: brightness(80%);
-    transition: 200ms;
+    border-radius: 15px;
+    background: var(--third-color);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
+    filter: brightness(65%);
+    transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: 300ms;
+  }
+  
+  
+  
+  
+  
+  .Cutia:hover {
+    box-shadow: 0 0 40px var(--tenth-color);
+    filter: brightness(100%);
   
   }
   
-  .Cutia:hover {
-    box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-    -moz-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-    -webkit-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-    -o-box-shadow: 0 0 30px 10px rgb(20, 174, 220);
-    filter: brightness(100%);
-    transition: 350ms;
+  
+  
+  
+  .Cutia h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-sixth-color);
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  
+  .Cutia:hover h1 {
+    color: var(--text-first-color);
+    text-shadow:
+      0 0 5px var(--text-second-color),
+      0 0 10px var(--text-third-color),
+      0 0 28px var(--text-forth-color);
+    transition: 1500ms;
+    font-size: 55px;
+  
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -475,31 +492,17 @@ input:checked + .slide-container .nav label { display: block; }
 }
   
   
-  .Cutia h1{
-    font-family: "Sofia", sans-serif;
-    color: #f760b4;
-    font-size: 50px;
-  }
-  
-  .Cutia:hover h1{
-    color: #fc8ff4;
-    text-shadow: 
-    0 0 5px #fc5bb3,
-    0 0 10px #fc5bb3, 
-    0 0 38px #fd38a4;
-     transition: 1500ms;
-     font-size: 55px;
-  
+  hr{
+    border-color: var(--eleventh-color);
   }
   
   .Cutia hr{
-	border-width: 1px;
-	border-color: #f760b4;
-	margin-left: 90px;
-	margin-right: 90px;
-	margin-top: 10px;
-	margin-bottom: 50px;
-  }
+      border-width: 1px;
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
 
   .control {
     font-family: arial;

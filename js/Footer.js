@@ -7,7 +7,7 @@ document.getElementById('footer1').innerHTML = `
 
 <div class="footer-content">
 
-            <h3>Neon Lux</h3>
+<h3><span style="font-family: 'Shadow'; font-size: 40px;">NE<span class="fa fa-lightbulb-o" style="font-size:25px; margin-left: 5px; margin-right: 5px"></span>N</span><span style="font-family: 'Rubik'; font-size: 20px; margin-left: 8px;">Lux</span></h3>
 
             <p class="lang-element ro">Suntem o pată de culoare într-o lume ce tinde tot mai mult spre monocrom. Împreună putem adăuga mici
               stropi de culoare în birouri, camere dar chiar și în suflete și vise, alături de un mic simbol al unei

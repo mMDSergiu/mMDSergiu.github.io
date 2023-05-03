@@ -8,7 +8,16 @@
 	<link rel="stylesheet" href="../css/Header.css">
 	<link rel="stylesheet" href="../css/Footer.css">
 	<link rel="stylesheet" href="../css/Common.css">
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
 </head>
 <body>
@@ -19,7 +28,9 @@
 	<main class="main">
 	<div class="Cutie" style="align-content: center;">
 		<form autocomplete="off">
-			<h2>Creare Cont</h2>
+			<h2 class="lang-element ro">Creare Cont</h2>
+			<h2 class="lang-element en" style="display: none;">Create Account</h2>
+			<h2 class="lang-element ru" style="display: none;">Зарегистрироваться</h2>
 			<div class="CutieIntrare">
 				<input type="text" required="required">
 				<span>Numele/Prenumele</span>
@@ -43,11 +54,13 @@
 				<a href="404.html">Ați uitat parola?</a>
 				<a href="Login.html">Logare</a>
 			</div>
-			<input type="submit" value="Creare">
+			<input class="lang-element ro" type="submit" value="Creare">
+			<input class="lang-element en" style="display: none;" type="submit" value="Create">
+			<input class="lang-element ru" style="display: none;" type="submit" value="Cозд.">
 		</form>
 	</div>
 </main>
-	<section class="footer" style="margin-top: 10%;">
+	<section class="footer">
 		<footer id="footer1">
 
 		</footer>
@@ -56,4 +69,6 @@
 </body>
 <script src="../js/Header.js"></script>
 <script src="../js/Footer.js"></script>
+<script src="../js/Lang.js"></script>
+
 </html>
