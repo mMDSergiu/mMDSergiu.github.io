@@ -36,10 +36,17 @@ document.getElementById('header').innerHTML = `
     <a href="${mainUrl}#AnchorProduse" class="lang-element ru" style="display: none;">Продукты</a>
     </li>
     <li>
-    <a href="${mainUrl}#AnchorContact" class="lang-element ro">Contact</a>
-    <a href="${mainUrl}#AnchorContact" class="lang-element en" style="display: none;">Contact</a>
-    <a href="${mainUrl}#AnchorContact" class="lang-element ru" style="display: none;">Контакт</a>
+    <div class="dropdown3">
+    <a>Mai Mult</a>
+    <div class="dropdown-content2">
+    <a  class="links" href="${mainUrl}#AnchorProduse"><span>Contact</span></a>
+    <a  class="links" href="${mainUrl}#AnchorProduse"><span>FAQ</span></a>
+    <a  class="links" href="${mainUrl}#AnchorProduse"><span>Recenzii</span></a>
+    </div>
+  </div>
+
     </li>
+    
 
     <span class="log-site"><li>
     <a href="${mainUrl1}./pages/Register.html" class="lang-element ro">Creare Cont</a>
@@ -124,4 +131,3 @@ window.onscroll = () => {
 }
 
 
-        

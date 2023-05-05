@@ -1,48 +1,55 @@
-.ro { display: block; }
-.en { display: none; }
-.ru { display: none; }
-
-h2{
-  color:aqua
-}
-
-.language-dropdown {
+/* Style the dropdown container */
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-btn {
-  background-color: #4CAF50;
-  color: white;
+/* Style the clickable text */
+#dropdown-btn {
+  display: inline-block;
   padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #333;
+  text-decoration: none;
 }
 
-.dropdown-content {
+/* Style the arrow down icon */
+.fa-arrow-down {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Style the dropdown content (hidden by default) */
+#dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 100%;
-  left: 0;
-  min-width: 160px;
-  padding: 12px 16px;
+  top: 40px;
   background-color: #f1f1f1;
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 8px 0;
-  text-decoration: none;
+/* Style the links inside the dropdown */
+#dropdown-content a {
   display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
 }
 
-.dropdown-content a:hover {
+/* Change color of links on hover */
+#dropdown-content a:hover {
   background-color: #ddd;
 }
 
+/* Show the dropdown content when the button is clicked */
 .show {
   display: block;
+}
+
+
+.fa-arrow-down {
+  width: 100px;
+  height: 40px;
 }

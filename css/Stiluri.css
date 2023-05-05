@@ -853,9 +853,113 @@ a {
 }
 
 
+/* text */
+
+.review-div h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-sixth-color);
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.review-div:hover h1 {
+  color: var(--text-first-color);
+  text-shadow:
+    0 0 5px var(--text-second-color),
+    0 0 10px var(--text-third-color),
+    0 0 28px var(--text-forth-color);
+  transition: 1500ms;
+  font-size: 55px;
+
+}
+
+.review{
+  margin-bottom: 150px;
+}
+
+.testimonials{
+  padding: 75px 0;
+  padding-top: 15px;
+  background: var(--third-color);
+  color: var(--secundary-color);
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.744);
+  filter: brightness(85%);
+  transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: 300ms;
+}
 
 
 
+
+
+.testimonials:hover {
+  box-shadow: 0 0 50px -25px var(--tenth-color);
+  filter: brightness(100%);
+
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  height: 1.5px;
+  background: var(--twelf-color);
+  margin: 0 50px;
+  margin-bottom: 25px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: var(--forth-color);
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: var(--twelf-color);
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+
+
+/* test */
 
 
 #contact {
@@ -1280,9 +1384,6 @@ hr {
 
   }
 
-  .mergi {
-    margin-right: 5%;
-  }
 
   .Cutia3 {
     margin-left: 25px;
@@ -1367,7 +1468,7 @@ hr {
 @media only screen and (max-width: 900px) {
   .mergi {
 
-    margin-right: 16%;
+
     transition: 300ms;
 
   }
@@ -1376,7 +1477,6 @@ hr {
 @media only screen and (max-width: 700px) {
   .mergi {
 
-    margin-right: 15%;
     transition: 300ms;
 
   }
@@ -1385,7 +1485,7 @@ hr {
 @media only screen and (max-width: 600px) {
   .mergi {
 
-    margin-right: 10%;
+
     transition: 300ms;
 
   }
@@ -1406,7 +1506,7 @@ hr {
 @media only screen and (max-width: 900px) {
   .mergi11 {
 
-    margin-right: 16%;
+   
     transition: 300ms;
 
   }
@@ -1415,7 +1515,7 @@ hr {
 @media only screen and (max-width: 700px) {
   .mergi11 {
 
-    margin-right: 15%;
+    
     transition: 300ms;
 
   }
@@ -1424,7 +1524,7 @@ hr {
 @media only screen and (max-width: 600px) {
   .mergi11 {
 
-    margin-right: 10%;
+
     transition: 300ms;
 
   }
@@ -1443,7 +1543,7 @@ hr {
 @media only screen and (max-width: 900px) {
   .mergi111 {
 
-    margin-right: 16%;
+
     transition: 300ms;
 
   }
@@ -1452,7 +1552,7 @@ hr {
 @media only screen and (max-width: 700px) {
   .mergi111 {
 
-    margin-right: 15%;
+
     transition: 300ms;
 
   }
@@ -1461,7 +1561,7 @@ hr {
 @media only screen and (max-width: 600px) {
   .mergi111 {
 
-    margin-right: 10%;
+
     transition: 300ms;
 
   }
