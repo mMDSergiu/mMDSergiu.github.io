@@ -53,6 +53,9 @@ document.getElementById('header').innerHTML = `
     </li></span>
  
     </ul>
+
+    
+
     
     <ul class="log">
     <li>
@@ -71,11 +74,19 @@ document.getElementById('header').innerHTML = `
 
   <li>
     <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb">
-  <div class="icon menu-btn">
-    <i class="fas fa-bars"></i>
-  </div>
-  </li>
+    </li>
+
 </ul>
+
+<ul class="log1">
+<li>
+<div class="icon menu-btn">
+<i class="fas fa-bars"></i>
+</div>
+</li>
+</ul>
+
+
 
 </div>
 </nav>
