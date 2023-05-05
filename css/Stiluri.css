@@ -1282,10 +1282,12 @@ hr {
   transition: 0.2s;
 }
 
-
+#AnchorRecenzii{
+  scroll-margin-top: 150px;
+}
 
 #AnchorContact {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 125px;
 }
 
 #AnchorGlarie {

@@ -811,7 +811,7 @@
       <section class="cincia" align="center">
         <hr style="margin-top: 150px;">
         <div class="cinci">
-          <h2 id="AnchorContact" style="padding-bottom: 10px ;">
+          <h2 style="padding-bottom: 10px ;">
             <span><i></i>N</span>
             <span><i></i>E</span>
             <span><i></i>O</span>
@@ -824,7 +824,7 @@
       </section>
 <head>
   
-      <section class="review">
+      <section id="AnchorRecenzii" class="review">
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
@@ -851,8 +851,14 @@
                       <i class="fas fa-star"></i>
                     </div>
       
-                    <p style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 20px;" class="lang-element ro">
                       "Produsele sunt pur și simplu uimitoare! Iar staff-ul este foarte receptiv! Sunt mulțumit de deservire, produs ți recomand cu încredere!"
+                    </p>
+                    <p style="margin-bottom: 20px; display: none;" class="lang-element en">
+                      "The products are simply amazing! And the staff is very responsive! I am satisfied with the service, I recommend the product with confidence!"
+                    </p>
+                    <p style="margin-bottom: 20px; display: none;" class="lang-element ru">
+                      "Изделия просто замечательные! И персонал очень отзывчивый! Сервисом доволен, товар рекомендую!"
                     </p>
                   </div>
                 </div>
@@ -869,9 +875,15 @@
                       <i class="far fa-star"></i>
                     </div>
       
-                    <p>
+                    <p class="lang-element ro">
                      "Produsele pe lângă că arată superb crează și emoții pozitive când sunt conectate! Am avut o singură experiență neplăcută, asta fiind transportul ce a deteriorat nesemnificativ produsul."
                     </p>
+                    <p class="lang-element en" style="display: none;">
+                      "The products, in addition to looking great, also create positive emotions when connected! I had only one unpleasant experience, that was the transport that damaged the product insignificantly."
+                     </p>
+                     <p class="lang-element ru" style="display: none;">
+                      "Изделия, кроме того, что отлично выглядят, еще и вызывают положительные эмоции при подключении! У меня был только один неприятный опыт, это транспортировка, которая незначительно повредила товар."
+                     </p>
                   </div>
                 </div>
    
@@ -887,8 +899,14 @@
                       <i class="far fa-star"></i>
                     </div>
       
-                    <p>
+                    <p class="lang-element ro">
                       "Sunt mulțumită de produs și recomand cu încredere! Ar trebui de găsit un mod în care clientul să previzualizeze mai bine produsul dar asta nu este o piedică semnificativă."
+                    </p>
+                    <p class="lang-element en" style="display: none;">
+                      "I am satisfied with the product and recommend it with confidence! A way should be found for the customer to preview the product better but this is not a significant hindrance."
+                    </p>
+                    <p class="lang-element ru" style="display: none;">
+                      "Товаром доволен и смело рекомендую! Должен быть найден способ, чтобы покупатель лучше ознакомился с продуктом, но это не является существенным препятствием."
                     </p>
                   </div>
                
@@ -905,9 +923,9 @@
 <div class="mini-hr"></div>
         <section id="contact">
 
-          <h1 class="section-header lang-element ro">Contact</h1>
-          <h1 class="section-header lang-element en" style="display: none;">Contact</h1>
-          <h1 class="section-header lang-element ru" style="display: none;">Контакт</h1>
+          <h1 class="section-header lang-element ro" id="AnchorContact">Contact</h1>
+          <h1 class="section-header lang-element en" style="display: none;" id="AnchorContact">Contact</h1>
+          <h1 class="section-header lang-element ru" style="display: none;" id="AnchorContact">Контакт</h1>
 
           <div class="contact-wrapper">
 
@@ -921,7 +939,7 @@
                     required>
                 </div>
               </div>
-
+ 
               <div class="form-group">
                 <div class="col-sm-12">
                   <input type="email" class="form-control" id="email" placeholder="Email" name="email" size="60px"
