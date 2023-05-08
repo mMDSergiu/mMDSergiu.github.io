@@ -40,7 +40,7 @@ document.getElementById('header').innerHTML = `
     <a>Mai Mult</a>
     <div class="dropdown-content2">
     <a  class="links" href="${mainUrl}#AnchorContact"><span>Contact</span></a>
-    <a  class="links" href="${mainUrl}#AnchorProduse"><span>FAQ</span></a>
+    <a  class="links" href="${mainUrl}#AnchorFAQ"><span>FAQ</span></a>
     <a  class="links" href="${mainUrl}#AnchorRecenzii"><span>Recenzii</span></a>
     </div>
   </div>
