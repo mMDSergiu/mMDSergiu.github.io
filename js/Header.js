@@ -36,12 +36,22 @@ document.getElementById('header').innerHTML = `
     <a href="${mainUrl}#AnchorProduse" class="lang-element ru" style="display: none;">Продукты</a>
     </li>
     <li>
-    <div class="dropdown3">
-    <a>Mai Mult</a>
-    <div class="dropdown-content2">
-    <a  class="links" href="${mainUrl}#AnchorContact"><span>Contact</span></a>
-    <a  class="links" href="${mainUrl}#AnchorFAQ"><span>FAQ</span></a>
-    <a  class="links" href="${mainUrl}#AnchorRecenzii"><span>Recenzii</span></a>
+    <div id="dropdown3" class="dropdown3">
+    <a class="lang-element ro">Mai Mult</a>
+    <a class="lang-element en" style="display: none;">More</a>
+    <a class="lang-element ru" style="display: none;">более</a>
+    <div id="dropdown-content2" class="dropdown-content2">
+    <a class="links" href="${mainUrl}#AnchorContact">
+    <span class="lang-element ro">Contact</span>
+    <span class="lang-element en" style="display: none;">Contact</span>
+    <span class="lang-element ru" style="display: none;">Контакт</span>
+    </a>
+    <a class="links" href="${mainUrl}#AnchorFAQ"><span>FAQ</span></a>
+    <a class="links" href="${mainUrl}#AnchorRecenzii">
+    <span class="lang-element ro">Recenzii</span>
+    <span class="lang-element en" style="display: none;">Reviews</span>
+    <span class="lang-element ru" style="display: none;">Отзывы</span>
+    </a>
     </div>
   </div>
 
@@ -54,9 +64,9 @@ document.getElementById('header').innerHTML = `
     <a href="${mainUrl1}./pages/Register.html" class="lang-element ru" style="display: none;">Зарегистрироваться</a>
     </li></span>
     <span class="log-site"><li>
-    <a href="${mainUrl1}./pages/Login.html" class="lang-element ro" style="margin-right: 0px;">Logare</a>
-    <a href="${mainUrl1}./pages/Login.html" class="lang-element en" style="margin-right: 0px; display: none;">Log In</a>
-    <a href="${mainUrl1}./pages/Login.html" class="lang-element ru" style="margin-right: 0px; display: none;">Вход</a>
+    <a href="${mainUrl1}./pages/Login.html" class="lang-element ro"">Logare</a>
+    <a href="${mainUrl1}./pages/Login.html" class="lang-element en" display: none;">Log In</a>
+    <a href="${mainUrl1}./pages/Login.html" class="lang-element ru" display: none;">Вход</a>
     </li></span>
  
     </ul>
@@ -131,3 +141,9 @@ window.onscroll = () => {
 }
 
 
+
+var element = document.getElementById("dropdown3");
+
+element.addEventListener("click", function() {
+  element.classList.toggle("clicked");
+});

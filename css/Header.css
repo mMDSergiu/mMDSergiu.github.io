@@ -7,13 +7,7 @@
 
 .dropdown3 {
   position: relative;
-
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  margin-right: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .dropdown-content2 {
@@ -25,7 +19,8 @@
   min-width: 160px;
   padding: 12px 16px;
   background-color: #f1f1f1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-image: linear-gradient(to bottom right, rgb(96, 96, 96), white);
+  box-shadow: 0px 8px 12px 6px rgba(0,0,0,0.2);
 }
 
 .dropdown-content2 a {
@@ -44,8 +39,12 @@
   color: white;
 }
 
-.dropdown3:hover .dropdown-content2 {
+/* .dropdown3:hover .dropdown-content2 {
   display: block;
+} */
+
+#dropdown3.clicked .dropdown-content2 {
+  display: inline-block;
 }
 
 .menu-list li a span{
@@ -171,21 +170,28 @@ color: #FF5733;
   display: none;
 }
 
+
 @media (max-width: 1230px) {
   .content{
     padding: 0 60px;
   }
 }
+
+
 @media (max-width: 1100px) {
   .content{
     padding: 0 40px;
   }
 }
+
+
 @media (max-width: 1000px) {
   .content{
     padding: 0 30px;
   }
 }
+
+
 @media (max-width: 999px) {
   body.disabled{
     overflow: hidden;
@@ -228,7 +234,13 @@ color: #FF5733;
   .navbar.show .menu-list li a{
     margin-left: 0px;
   }
+
+  .dropdown-content2{
+    left: 90px;
+  }
 }
+
+
 @media (max-width: 380px) {
   .navbar .logo a{
     font-size: 27px;
