@@ -246,3 +246,19 @@ color: #FF5733;
     font-size: 27px;
   }
 }
+
+
+#div1 {
+  display: block;
+
+}
+
+#div2 {
+  display: none;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
