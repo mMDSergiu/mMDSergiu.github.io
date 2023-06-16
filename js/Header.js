@@ -49,9 +49,9 @@ document.getElementById('header').innerHTML = `
     </li>
     <li>
     <div id="dropdown3" class="dropdown3">
-    <a class="lang-element ro">Mai Mult</a>
-    <a class="lang-element en" style="display: none;">More</a>
-    <a class="lang-element ru" style="display: none;">более</a>
+    <a class="lang-element ro" style="user-select: none;" >Mai Mult</a>
+    <a class="lang-element en" style="display: none; user-select: none;">More</a>
+    <a class="lang-element ru" style="display: none; user-select: none;">более</a>
     <div id="dropdown-content2" class="dropdown-content2">
     <a class="links" href="${mainUrl}#AnchorContact">
     <span class="lang-element ro">Contact</span>
@@ -93,7 +93,7 @@ document.getElementById('header').innerHTML = `
   </li>
 
   <li>
-    <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb">
+    <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb1">
     </li>
 
 </ul>
@@ -135,21 +135,22 @@ document.getElementById('header').innerHTML = `
     <a href="${mainUrl}#AnchorProduse" class="lang-element ru" style="display: none;">Продукты</a>
     </li>
     <li>
+
     <div id="dropdown3" class="dropdown3">
-    <a class="lang-element ro">Mai Mult</a>
-    <a class="lang-element en" style="display: none;">More</a>
-    <a class="lang-element ru" style="display: none;">более</a>
+    <a class="lang-element ro" style="user-select: none;">Mai Mult</a>
+    <a class="lang-element en" style="display: none; user-select: none;">More</a>
+    <a class="lang-element ru" style="display: none; user-select: none;">более</a>
     <div id="dropdown-content2" class="dropdown-content2">
-    <a class="links" href="${mainUrl}#AnchorContact">
-    <span class="lang-element ro">Contact</span>
-    <span class="lang-element en" style="display: none;">Contact</span>
-    <span class="lang-element ru" style="display: none;">Контакт</span>
-    </a>
     <a class="links" href="${mainUrl}#AnchorFAQ"><span>FAQ</span></a>
     <a class="links" href="${mainUrl}#AnchorRecenzii">
     <span class="lang-element ro">Recenzii</span>
     <span class="lang-element en" style="display: none;">Reviews</span>
     <span class="lang-element ru" style="display: none;">Отзывы</span>
+    </a>
+    <a class="links" href="${mainUrl}#AnchorContact">
+    <span class="lang-element ro">Contact</span>
+    <span class="lang-element en" style="display: none;">Contact</span>
+    <span class="lang-element ru" style="display: none;">Контакт</span>
     </a>
     </div>
   </div>
@@ -189,7 +190,7 @@ document.getElementById('header').innerHTML = `
   </li>
 
   <li>
-    <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb">
+    <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb2">
     </li>
 
 </ul>
@@ -210,7 +211,7 @@ document.getElementById('header').innerHTML = `
 </div>
 `;
 
-var icon = document.getElementById("icon-bulb");
+var icon = document.getElementById("icon-bulb1");
 icon.onclick = function () {  
   document.body.classList.toggle("white-theme");
   if (document.body.classList.contains("white-theme")) {
@@ -219,6 +220,17 @@ icon.onclick = function () {
     icon.src = `${mainUrl1}./img/Special/BulbOff.png`;
   }
 }
+
+var icon = document.getElementById("icon-bulb2");
+icon.onclick = function () {  
+  document.body.classList.toggle("white-theme");
+  if (document.body.classList.contains("white-theme")) {
+    icon.src = `${mainUrl1}./img/Special/BulbOn.png`;
+  } else {
+    icon.src = `${mainUrl1}./img/Special/BulbOff.png`;
+  }
+}
+
 
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
@@ -240,11 +252,7 @@ window.onscroll = () => {
 
 
 
-var element = document.getElementById("dropdown3");
 
-element.addEventListener("click", function() {
-  element.classList.toggle("clicked");
-});
 
 
 

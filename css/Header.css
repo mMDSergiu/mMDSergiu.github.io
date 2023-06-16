@@ -1,6 +1,9 @@
+#icon-bulb1{
+  width: 30px;
+  cursor: pointer;
+}
 
-
-#icon{
+#icon-bulb2{
   width: 30px;
   cursor: pointer;
 }
@@ -43,7 +46,7 @@
   display: block;
 } */
 
-#dropdown3.clicked .dropdown-content2 {
+#dropdown3:hover .dropdown-content2 {
   display: inline-block;
 }
 
@@ -71,13 +74,13 @@
   position: fixed;
   width: 100%;
   z-index: 9;
-  padding: 20px 0;
+  padding: 15px 0;
   transition: all 0.3s ease;
   background: rgb(13, 13, 13);
 }
 .navbar.sticky{
   background: #111;
-  padding: 20px 0;
+  padding: 15px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   transition: 100ms;
 }
@@ -216,9 +219,9 @@ color: #FF5733;
     top: 0px;
     display: block;
     padding: 40px 0;
-    text-align: center;
     background: #222;
     transition: all 0.3s ease;
+    padding-left: 60px;
   }
   .navbar.show .menu-list{
     left: 0%;
@@ -236,7 +239,10 @@ color: #FF5733;
   }
 
   .dropdown-content2{
-    left: 90px;
+    left: 0px;
+  }
+  .navbar{
+    padding: 10px 0;
   }
 }
 

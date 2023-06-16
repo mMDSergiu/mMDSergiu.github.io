@@ -1469,7 +1469,18 @@ hr {
   margin: 10px;
 }
 
-
+@media (max-width: 488px){
+  .send-button{
+    min-width: 280PX;
+  }
+  .form-control2,
+textarea {
+  width: 280px;
+}
+.form-control{
+  width: 280px;
+}
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .meniu-container a {
