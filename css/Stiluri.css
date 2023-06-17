@@ -1480,6 +1480,10 @@ textarea {
 .form-control{
   width: 280px;
 }
+
+.Enter p{
+  font-size: 15px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
