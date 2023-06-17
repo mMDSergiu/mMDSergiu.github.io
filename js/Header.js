@@ -11,8 +11,8 @@ const mainUrl1 = isHome ? '' : '.';
 
 document.getElementById('header').innerHTML = `  
 
-<nav class="navbar">
 <div id="div2">
+<nav class="navbar">
 <div class="content">
   <div class="logo">
     <a href="${mainUrl}#AnchorTop"><span style="font-family: 'Shadow'; font-size: 40px;">NE<span class="fa fa-lightbulb-o" style="font-size:25px; margin-left: 5px; margin-right: 5px"></span>N</span><span style="font-family: 'Rubik'; font-size: 20px; margin-left: 8px;">Lux</span></a>
@@ -78,19 +78,7 @@ document.getElementById('header').innerHTML = `
 
     
     <ul class="log">
-    <li>
-    <div class="language-dropdown">
-    <button class="dropdown-btn">
-      <span>RO   <i class="fa fa-chevron-down style="font-size:10px;"></i></span>
-      <span class="glyphicon glyphicon-chevron-down"></span>
-    </button>
-    <div class="dropdown-content">
-      <a href="#" data-lang="ro">RO</a>
-      <a href="#" data-lang="en">ENG</a>
-      <a href="#" data-lang="ru">RU</a>
-    </div>
-  </div>
-  </li>
+    
 
   <li>
     <img src="${mainUrl1}./img/Special/BulbOff.png" id="icon-bulb1">
@@ -109,8 +97,11 @@ document.getElementById('header').innerHTML = `
 
 
 </div>
+</nav>
 </div>
+
 <div id="div1">
+<nav class="navbar">
 <div class="content">
   <div class="logo">
     <a href="${mainUrl}#AnchorTop"><span style="font-family: 'Shadow'; font-size: 40px;">NE<span class="fa fa-lightbulb-o" style="font-size:25px; margin-left: 5px; margin-right: 5px"></span>N</span><span style="font-family: 'Rubik'; font-size: 20px; margin-left: 8px;">Lux</span></a>
@@ -178,7 +169,7 @@ document.getElementById('header').innerHTML = `
     <li>
     <div class="language-dropdown">
     <button class="dropdown-btn">
-      <span>RO   <i class="fa fa-chevron-down style="font-size:10px;"></i></span>
+      <span>RO   <i class="fa fa-chevron-down" style="font-size:10px;"></i></span>
       <span class="glyphicon glyphicon-chevron-down"></span>
     </button>
     <div class="dropdown-content">
@@ -204,9 +195,9 @@ document.getElementById('header').innerHTML = `
 </ul>
 
 </div>
-</div>
 
 </nav>
+</div>
 <div class="banner"></div>
 </div>
 `;
